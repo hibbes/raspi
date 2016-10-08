@@ -1,0 +1,88 @@
+@CHARSET "UTF-8";
+body {
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-top: 3%;
+	color: black;
+	background-color: white;
+    font-size:75%;
+	font-family: Verdana, Tahoma, Myriad Web, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	color: blue;
+}
+
+div {
+  
+  background-color: #eee;
+  padding: 20px;
+  border: 1px solid #8c8c8c;
+  height:700px;
+}
+  #kind{
+  position: absolute;
+  top: 150px;
+  width: 18em
+  
+  
+ 
+  }
+  
+  #partner{
+  position: absolute;
+  top:150px;
+  left: 700px;
+  width: 18em;
+ 
+  }
+  
+  #eltern{
+  
+ position: absolute;
+  top: 150px;
+  left: 400px;
+  width: 18em;
+  }
+  
+  
+  #schulbesuch{
+  position: absolute;
+  top: 150px;
+  left: 1000px;
+  width: 18em
+ 
+  }
+  
+   #allgemein{
+  position: absolute;
+  top: 905px;
+  height:120px;
+  
+  width: 94em
+ 
+  }
+
+label { /* Beschriftung auf eigener Zeile */
+
+  display:flex;
+  margin-top:10px;
+}
+
+
+h1.titel {
+	text-align: center;
+	line-height: 1.5em;
+}
+
+dt {
+	margin-top:  1em;
+}
+dd {
+	font-size: 85%;
+}
+
+
+p.footer {
+	font-size: 0.7em;
+}
