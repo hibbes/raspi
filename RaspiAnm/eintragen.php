@@ -50,12 +50,12 @@ $ergebnis = mysqli_query($db, $abfrage);
 echo "Formular-ID ist $eintrags_id";
 
 if(mysqli_num_rows($ergebnis)==0){
-	$eintrag = "INSERT INTO Anmeldungen (Vorname, Zweitname, Nachname, Geschlecht, Geburtsdatum, 
-	Geburtsort, Geburtsland, Staatsang1, Staatsang2, Bekenntnis, Schule, Klasse, Sprachwahl, 
-	Reliunter, Zug, Strasse, PLZ, Ort, Mutter_Vorname, Mutter_Nachname, Vater_Vorname, Vater_Nachname, 
-	Festnetztel, EMail, Mobilfunknr, Foto_Einw, Notfallnr, Geschwisterklasse, Klassenpartner, 
-	nichtKlassenpartner, Vorname_Partner, Nachname_Partner, Sorgerecht_Partner, Strasse_Partner, PLZ_Partner, Ort_Partner, 
-	Partner_Tel, Partner_Mobil, Partner_Mail, Eintrags_ID) VALUES
+	$eintrag = "INSERT INTO Anmeldungen (Vorname, Rufname, Nachname, Geschlecht, Geburtstag, 
+	Geburtsort, Geburtsland, Land, Land2, Religion, AbgebendeSchule, Klasse, Sprachwahl, 
+	RU, Profil1, Strasse, PLZ, Ort, Erz1Name, Erz1Vorname, Erz2Vorname, Erz2Nachname, 
+	Erz1Telefon, Erz1Email, Erz1Handy, Foto_Einw, Notfallnr, Geschwisterklasse, Klassenpartner, 
+	nichtKlassenpartner, Erz2Vorname, Erz2Name, Sorgerecht_Partner, Erz2Strasse, Erz2PLZ, Erz2Ort, 
+	Erz2Telefon, Erz2Handy, Erz2Email, Eintrags_ID) VALUES
 	('$vorname', '$zweitname', '$nachname', '$geschlecht', '$geburtsdatum', '$geburtsort', 
 	'$geburtsland', '$staat1', '$staat2', '$bekenntnis', '$schule', '$klasse', '$sprachwahl', '$reli',
 	'$zug', '$strasse1', '$plz1', '$ort1', '$muttervor', '$mutternach', '$vatervor', '$vaternach', '$telefon1',
