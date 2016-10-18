@@ -16,6 +16,7 @@ $muttersprache = $_POST["muttersprache"];
 $bekenntnis = $_POST["bekenntnis"];
 $abgebendeschule = $_POST["schule"];
 $sprachwahl = $_POST["fremdsprache"];
+$profil1 = $_POST["profil1"];
 $religion = $_POST["religion"];
 $ru = $_POST["reli"];
 $zug = $_POST["zug"];
@@ -41,16 +42,16 @@ $erz2name = $_POST["Erz2Name"];
 $erz2geschlecht = $_POST['erz2geschlecht'];
 
 
-$erz2vorname = $_POST["Erz2Vorname"];
-$erz2name = $_POST["Erz2Name"];
+$erz2vorname = $_POST["erz2vorname"];
+$erz2name = $_POST["erz2name"];
 $erz2strasse = $_POST["erz2strasse"];
 $erz2hausnummer = $_POST["erz2hausnummer"];
 $erz2ort = $_POST["erz2ort"];
 $erz2plz = $_POST["erz2plz"];
 $erz2telefon = $_POST["erz2telefon"];
 $erz2telefon2 = $_POST["erz2telefon2"];
-$erz2email = $_POST["email2"];
-$erz2handy = $_POST["mobil2"];
+$erz2email = $_POST["erz2email"];
+$erz2handy = $_POST["erz2handy"];
 
 
 $foto = $_POST["foto"];
@@ -110,7 +111,8 @@ if(mysqli_num_rows($ergebnis)==0){
 		Erz2Handy, 
 		Erz2Email, 
 		AbgebendeSchule, 
-		Sprachwahl, 
+		Sprachwahl,
+		Profil1,
 		Foto_Einw, 
 		Notfallnr, 
 		Geschwister, 
@@ -126,7 +128,7 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$geburtsort', 
 	'$geburtsland', 
 	'$geschlecht', 
-	'$religion', 
+	'$bekenntnis', 
 	'$ru', 
 	'$land', 
 	'$land2', 
@@ -158,7 +160,8 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$erz2handy', 
 	'$erz2email', 
 	'$abgebendeschule', 
-	'$sprachwahl', 
+	'$sprachwahl',
+	'$profil1',
 	'$foto', 
 	'$notfallnr', 
 	'$geschwister', 
