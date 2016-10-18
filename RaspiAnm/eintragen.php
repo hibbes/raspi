@@ -15,16 +15,16 @@ $land2 = $_POST["staat2"];
 $muttersprache = $_POST["muttersprache"];
 $bekenntnis = $_POST["bekenntnis"];
 $abgebendeschule = $_POST["schule"];
-
-$sprachwahl = $_POST["sprachwahl"];
+$sprachwahl = $_POST["fremdsprache"];
+$religion = $_POST["religion"];
 $ru = $_POST["reli"];
 $zug = $_POST["zug"];
-$strasse1 = $_POST["strasse1"];
-$hausnummer1 = $_POST["hausnummer1"];
-$ort1 = $_POST["ort1"];
-$plz1 = $_POST["plz1"];
-$erz1vorname = $_POST["Erz1Vorname"];
-$erz1name = $_POST["Erz1Name"];
+$strasse = $_POST["strasse"];
+$hausnummer = $_POST["hausnummer"];
+$ort = $_POST["ort"];
+$plz = $_POST["plz"];
+$erz1vorname = $_POST["erz1vorname"];
+$erz1name = $_POST["erz1name"];
 $erz1geschlecht = $_POST['erz1geschlecht'];
 $erz1strasse = $_POST["erz1strasse"];
 $erz1hausnummer = $_POST["erz1hausnummer"];
@@ -139,7 +139,7 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$erz1vorname', 
 	'$erz1geschlecht', 
 	'$erz1strasse', 
-	'$erz1hausnummer' ,
+	'$erz1hausnummer',
 	'$erz1plz', 
 	'$erz1ort', 
 	'$erz1telefon', 
