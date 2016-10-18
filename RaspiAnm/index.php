@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="standard.css">	
-<title>Daten-&Umml;berpr&uuml;fung</title>
+<title>Daten-&Uuml;berpr&uuml;fung</title>
 </head>
 <body>
 
@@ -16,10 +16,10 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
 <div id="kind">
 <form action="http://192.168.0.107/eintragen.php" method="post">
    <h3>Angaben zum Kind</h3> 
-    <label for="vorname">Vorname</label> 
+    <label for="vorname">Vorname(n)</label> 
     <input type="text" name="vorname" value="<?php echo $_GET['vorname']; ?>" maxlength="30">
     
-    <label for="rufname">Zweite(r) Vorname(n)</label> 
+    <label for="rufname">Rufname</label> 
     <input type="text" name="rufname" value="<?php echo $_GET['rufname']; ?>" maxlength="30">
  
     <label for="zuname">Nachname</label>  
@@ -78,7 +78,7 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <label for="reli">Religionsunterricht</label> 
     <input type="text" name="reli" value="<?php echo $_GET['reli']; ?>" maxlength="90"><br>
         
-    <label for="zug">Profilwahl</label> 
+    <label for="profil1">Profilwahl</label> 
     <input type="text" name="profil1" value="<?php echo $_GET['profil1']; ?>" maxlength="90"><br>
     
     <label for="mit">M&ouml;chte in eine Klasse mit</label> 
@@ -104,7 +104,7 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <input type="text" name="erz1strasse" value="<?php echo $_GET['erz1strasse']; ?>" maxlength="30"><br>
     
     <label for="erz1hausnummer">Hausnummer</label> 
-    <input type="text" name="erz1strasse" value="<?php echo $_GET['erz1hausnummer']; ?>" maxlength="30"><br>
+    <input type="text" name="erz1hausnummer" value="<?php echo $_GET['erz1hausnummer']; ?>" maxlength="30"><br>
     
     
     <label for="erz1plz">Postleitzahl</label> 
@@ -119,6 +119,8 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <label for="erz1telefon2">Telefon de(s/n) 1. Erziehungsberechtige(n/r) (Arbeit)</label> 
     <input type="text" name="erz1telefon2" value="<?php echo $_GET['erz1telefon2']; ?>" maxlength="30"><br>
     
+     <label for="erz1handy">Mobilnr. de(s/n) 1. Erziehungsberechtige(n/r)</label> 
+    <input type="text" name="erz1handy" value="<?php echo $_GET['erz1mobil']; ?>" maxlength="30"><br>
     
     <label for="erz1email">E-Mail de(s/n) 1. Erziehungsberechtige(n/r)</label> 
     <input type="text" name="erz1email" value="<?php echo $_GET['erz1email']; ?>" maxlength="30"><br>
@@ -137,8 +139,7 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     
     <label for="erz1hausnummer">Hausnummer</label> 
     <input type="text" name="erz2hausnummer" value="<?php echo $_GET['erz2hausnummer']; ?>" maxlength="30"><br>
-    
-    
+        
     <label for="erz2plz">Postleitzahl</label> 
     <input type="text" name="erz2plz" value="<?php echo $_GET['erz2plz']; ?>" maxlength="30">
     
@@ -151,6 +152,8 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <label for="erz2telefon2">Telefon de(s/n) 2. Erziehungsberechtige(n/r) (Arbeit)</label> 
     <input type="text" name="erz2telefon2" value="<?php echo $_GET['erz2telefon2']; ?>" maxlength="30"><br>
     
+      <label for="erz2handy">Mobilnr. de(s/n) 2. Erziehungsberechtige(n/r)</label> 
+    <input type="text" name="erz2handy" value="<?php echo $_GET['erz2mobil']; ?>" maxlength="30"><br>
     
     <label for="erz2email">E-Mail de(s/n) 2. Erziehungsberechtige(n/r)</label> 
     <input type="text" name="erz2email" value="<?php echo $_GET['erz2email']; ?>" maxlength="30"><br>
