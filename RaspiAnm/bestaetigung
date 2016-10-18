@@ -1,14 +1,18 @@
 <a href="http://192.168.0.107/index.php?id={entry_id}&vorname={Name (Vorname):3.3}&rufname={Name (zweiter Vorname):3.4}&zuname={Name (Nachname):3.6}&strasse={Anschrift (Anschrift):10.1}&hausnummer={Anschrift (Anschrift Zusatz):10.2}&plz={Anschrift (Ort):10.3}&ort={Anschrift (PLZ):10.5}&staat1={Staatsangehörigkeit:56}&staat2={ggfs 2. Staatsangehörigkeit:68}&geschlecht={Geschlecht:16}&geburtsdatum={Geburtsdatum:17}&geburtsort={Geburtsort:20}&geburtsland={Geburtsland:54}&muttersprache={Muttersprache:57}&bekenntnis={Religionszugehörigkeit:49}&abgebendeSchule={abgebende Schule:23}&fremdsprache={Sprachwahl Klasse 6:27}&reli={Teilnahme Religionsunterricht/Ethikunterricht:50}&profil1={Wahl des Zuges:29}&inKlassemit={In eine Klasse mit (max 2 Namen):30}&nichtinKlassemit={Nicht in eine Klasse mit:31}&erz1vorname={Name de(s/n) 1. Erziehungsberechtige(n/r) (Vorname):33.3}&erz1name={Name de(s/n) 1. Erziehungsberechtige(n/r) (Nachname):33.6}&erz1geschlecht={Geschlecht:60}&erz1strasse={Anschrift Anschrift:51.1}&erz1hausnummer={Anschrift:51.2}&erz1plz={Anschrift (Ort):51.3}&erz1ort={Anschrift (PLZ):51.5}&erz1email={E-Mail:66}&erz1telefon={Telefon:67}&erz1telefon2={Telefon (Arbeit):69}&erz1mobil={Mobilfunknummer:53}&erz2vorname={Name de(s/n) 2. Erziehungsberechtige(n/r) (Vorname):34.3}&erz2name={Name de(s/n) 2. Erziehungsberechtige(n/r) (Nachname):34.6}&erz2geschlecht={Geschlecht:61}&erz2strasse={Anschrift (Anschrift):52.1}&erz2hausnummer={Anschrift (Anschrift Zusatz):52.2}}&erz2plz={Anschrift (Ort):52.3}&erz2ort={Anschrift (PLZ):52.5}&erz2email={E-Mail:5}&erz2telefon={Telefon (wenn abweichend):4}&erz2telefon2={Telefon (Arbeit):70}&erz2mobil={Mobilfunknummer:35}&geschwister={Geschwister am Schiller in Klasse:19}&notfallnummer={Notfall-Nummer, sollte ich nicht erreichbar sein:44}&einwilligung={Ich willige bis auf Widerruf ein, dass die Schule Name und Bild meines Kindes im Schiller Aktuell, in Zeitungsberichten sowie auf der Homepage und der Anzeigetafel der Schule veröffentlichen darf.:46}&datum={date_dmy}">
 
-http://192.168.0.107/index.php?id=2004&vorname=Vornamenkarl
-&rufname=Rufnamenhase&name=Nachnamenspatz&strasse=Stra%C3%9Fenscnick&hausnummer=1&plz=78956&ort=Ortenberg&
-staat1=Belgien&staat2=Aserbaidschan&geschlecht=m%C3%A4nnlich&geburtsdatum=15/11/2001&geburtsort=Geburtendorf&
-geburtsland=&muttersprache=albanisch&bekenntnis=keine%20Religionszugeh%C3%B6rigkeit
-&abgebendeSchule=Weinbergschule&fremdsprache=Franz%C3%B6sisch&reli=Ethikunterricht
-&profil1=Normalzug&inKlassemit=Schnick&nichtinKlassemit=Schnuck
-&erz1vorname=Erz1berger&erz1name=Nacherz1ser&erz1geschlecht=weiblich
-&erz1strasse=Erzstr,&erz1hausnummer=1&erz1plz=79879&erz1ort=Erz1berg
-&erz1email=m.czernohous@schiller-offenburg.de&erz1telefon=878456&erz1telefon2=4523645
-&erz1mobil=763784&erz2vorname=Erz1dieter&erz2name=Er2Nach&erz2geschlecht=
-&erz2strasse=&erz2hausnummer=&erz2plz=&erz2ort=&erz2email=&erz2telefon=675
-&erz2telefon2=4576&erz2mobil=65537&geschwister=Susi&notfallnummer=63456&einwilligung=Ja&datum=18/10/2016
+
+
+http://192.168.0.107/index.php?id=2005
+&vorname=Lieschen&rufname=Klein&name=Erna&strasse=%C3%96sil&hausnummer=543
+&plz=92898&ort=Maj&staat1=Deutschland&staat2=Bangladesch&geschlecht=weiblich
+&geburtsdatum=02/05/2001&geburtsort=Hamburg&geburtsland=&muttersprache=
+&bekenntnis=alevitisch&abgebendeSchule=Weinbaergschule&fremdsprache=Franz%C3%B6sisch
+&reli=evangelischer%20Religionsunterricht&profil1=Bilingualer%20Zug%20Englisch
+&inKlassemit=N%C3%B6li,%20Schn%C3%B6li&nichtinKlassemit=Prammer&erz1vorname=Erz1&erz1name=Diebele
+&erz1geschlecht=weiblich&erz1strasse=Strasendings&erz1hausnummer=49
+&erz1plz=09800&erz1ort=oRTENBORTEN&erz1email=m.czernohous@schiller-offenburg.de
+&erz1telefon=6534563&erz1telefon2=6346345&erz1mobil=2363456&erz2vorname=Zwiebel&erz2name=Must
+&erz2geschlecht=&erz2strasse=H%C3%A4,%20lass%20so%20stehen&erz2hausnummer=4535
+&erz2plz=Dynamik%20=%20fail&erz2ort=Geht%20nicht&erz2email=m.czernohous@schiller-offenburg.de
+&erz2telefon=093456&erz2telefon2=765&erz2mobil=6345&geschwister=nein&notfallnummer=636&einwilligung=Ja
+&datum=18/10/2016
