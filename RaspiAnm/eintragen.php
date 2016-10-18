@@ -156,7 +156,7 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$erz2telefon', 
 	'$erz2telefon2', 
 	'$erz2handy', 
-	'$erz2email' 
+	'$erz2email', 
 	'$abgebendeschule', 
 	'$sprachwahl', 
 	'$foto', 
