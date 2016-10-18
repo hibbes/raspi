@@ -68,7 +68,7 @@ $ergebnis = mysqli_query($db, $abfrage);
 echo "Formular-ID ist $eintrags_id";
 
 if(mysqli_num_rows($ergebnis)==0){
-	$eintrag = "INSERT INTO Anmeldungen (Eintrags_ID, Klasse, Name, Vorname, Rufname, Geschlecht, Geburtstag, Geburtsort, Geburtsland, Geschlecht, Religion, RU, Land, ,Land2, Strasse, HausNr, PLZ, Ort, 
+	$eintrag = "INSERT INTO Anmeldungen (Eintrags_ID, Klasse, Name, Vorname, Rufname, Geschlecht, Geburtstag, Geburtsort, Geburtsland, Geschlecht, Religion, RU, Land, Land2, Strasse, HausNr, PLZ, Ort, 
 	Muttersprache, Erz1Name, Erz1Vorname, Erz1Geschlecht, Erz1Strasse, Erz1HausNr, Erz1PLZ, Erz1Ort,
 	Erz1Telefon, Erz1Telefon2 , Erz1Handy, Erz1Email, Erz2Vorname, Erz2Name, Erz2Geschlecht, Erz1Strasse, Erz1HausNr, Erz1PLZ, Erz1Ort,
 	Erz2Telefon, Erz2Telefon2, Erz2Handy, Erz2Email, AbgebendeSchule, Sprachwahl, Foto_Einw, Notfallnr, Geschwister, Klassenpartner, 

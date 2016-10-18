@@ -9,12 +9,12 @@
 
 
 	
-Folgende Daten wurden Ã¼bermittelt:<p>
+Folgende Daten wurden Übermittelt:<p>
 
 Eintrags-ID: <?php echo $_GET['id']; ?>
 
 <div id="kind">
-<form action="http://localhost:8888/eintragen.php" method="post">
+<form action="http://192.168.0.107/eintragen.php" method="post">
    <h3>Angaben zum Kind</h3> 
     <label for="vorname">Vorname</label> 
     <input type="text" name="vorname" value="<?php echo $_GET['vorname']; ?>" maxlength="30">
