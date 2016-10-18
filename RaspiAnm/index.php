@@ -99,8 +99,12 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <label for="erz1geschlecht">Geschlecht</label> 
     <input type="text" name="erz1geschlecht" value="<?php echo $_GET['erz1geschlecht']; ?>" maxlength="5"><br>
     
-    <label for="erz1strasse">Straﬂe und Hausnummer</label> 
+    <label for="erz1strasse">Straﬂe</label> 
     <input type="text" name="erz1strasse" value="<?php echo $_GET['erz1strasse']; ?>" maxlength="30"><br>
+    
+    <label for="erz1hausnummer">Hausnummer</label> 
+    <input type="text" name="erz1strasse" value="<?php echo $_GET['erz1hausnummer']; ?>" maxlength="30"><br>
+    
     
     <label for="erz1plz">Postleitzahl</label> 
     <input type="text" name="erz1plz" value="<?php echo $_GET['erz1plz']; ?>" maxlength="30">
@@ -127,8 +131,12 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <label for="erz2geschlecht">Geschlecht</label> 
     <input type="text" name="erz2geschlecht" value="<?php echo $_GET['erz2geschlecht']; ?>" maxlength="5"><br>
     
-     <label for="erz2strasse">Straﬂe und Hausnummer</label> 
+     <label for="erz2strasse">Straﬂe r</label> 
     <input type="text" name="erz2strasse" value="<?php echo $_GET['erz2strasse']; ?>" maxlength="30"><br>
+    
+    <label for="erz1hausnummer">Hausnummer</label> 
+    <input type="text" name="erz2hausnummer" value="<?php echo $_GET['erz2hausnummer']; ?>" maxlength="30"><br>
+    
     
     <label for="erz2plz">Postleitzahl</label> 
     <input type="text" name="erz2plz" value="<?php echo $_GET['erz2plz']; ?>" maxlength="30">
