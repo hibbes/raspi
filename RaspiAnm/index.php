@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="standard.css">	
-<title>Daten-&Umml;berpr&uuml;fung</title>
+<title>Daten-&Uuml;berpr&uuml;fung</title>
 </head>
 <body>
 
@@ -20,7 +20,7 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <input type="text" name="vorname" value="<?php echo $_GET['vorname']; ?>" maxlength="30">
     
     <label for="rufname">Zweite(r) Vorname(n)</label> 
-    <input type="text" name="zweitname" value="<?php echo $_GET['rufname']; ?>" maxlength="30">
+    <input type="text" name="rufname" value="<?php echo $_GET['rufname']; ?>" maxlength="30">
  
     <label for="zuname">Nachname</label>  
     <input type="text" name="name" value="<?php echo $_GET['name']; ?>" maxlength="40"><br>
@@ -32,7 +32,7 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <input type="text" name="hausnummer" value="<?php echo $_GET['hausnummer']; ?>" maxlength="3"><br>
     
     <label for="postleitzahl">Postleitzahl</label>  
-    <input type="text" name="postleitzahl" value="<?php echo $_GET['postleitzahl']; ?>" maxlength="15">
+    <input type="text" name="plz" value="<?php echo $_GET['plz']; ?>" maxlength="15">
     
 	<label for="ort">Ort</label>  
     <input type="text" name="ort" value="<?php echo $_GET['ort']; ?>" maxlength="20">
@@ -45,6 +45,10 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     
     <label for="geschlecht">Geschlecht</label> 
     <input type="text" name="geschlecht" value="<?php echo $_GET['geschlecht']; ?>" maxlength="30"><br>
+    
+    <label for="bekenntnis">Bekenntnis</label> 
+    <input type="text" name="bekenntnis" value="<?php echo $_GET['bekenntnis']; ?>" maxlength="30"><br>
+    
 	
 	<label for="geburtsdatum">Geburtsdatum</label> 
     <input type="text" name="geburtsdatum" value="<?php echo $_GET['geburtsdatum']; ?>" maxlength="10">
@@ -52,17 +56,14 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
 	<label for="geburtsland">Geburtsort</label> 
     <input type="text" name="geburtsort" value="<?php echo $_GET['geburtsort']; ?>" maxlength="30">
   
-    <label for="geburtsland">Geburtland</label> 
+    <label for="geburtsland">Geburtsland</label> 
     <input type="text" name="geburtsland" value="<?php echo $_GET['geburtsland']; ?>" maxlength="30"><br>
     
     <label for="muttersprache">Muttersprache</label> 
     <input type="text" name="muttersprache" value="<?php echo $_GET['muttersprache']; ?>" maxlength="30"><br>
        
-	<label for="bekenntnis">Bekenntnis</label> 
-    <input type="text" name="bekenntnis" value="<?php echo $_GET['bekenntnis']; ?>" maxlength="30"><br>
-    
-    <label for="schule">abgebende Schule </label> 
-    <input type="text" name="schule" value="<?php echo $_GET['schule']; ?>" maxlength="60">
+	    <label for="schule">abgebende Schule </label> 
+    <input type="text" name="abgebendeSchule" value="<?php echo $_GET['abgebendeSchule']; ?>" maxlength="60">
            
     <label for="geschwister">Geschwister in Schiller-Klasse</label> 
     <input type="text" name="geschwister" value="<?php echo $_GET['geschwister']; ?>" maxlength="100"><br>
@@ -72,7 +73,7 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <h3>Wahl für Schulbesuch</h3>
     
     <label for="sprachwahl">Sprachwahl</label> 
-    <input type="text" name="sprachwahl" value="<?php echo $_GET['sprachwahl']; ?>" maxlength="90"><br>
+    <input type="text" name="fremdsprache" value="<?php echo $_GET['fremdsprache']; ?>" maxlength="90"><br>
     
     <label for="reli">Religionsunterricht</label> 
     <input type="text" name="reli" value="<?php echo $_GET['reli']; ?>" maxlength="90"><br>
@@ -90,7 +91,7 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <div id="eltern">
     
     <h3>Eltern</h3>
-    <label for="erz1vor">Name de(s/n) 1. Erziehungsberechtige(n/r)</label> 
+    <label for="erz1vorname">Name de(s/n) 1. Erziehungsberechtige(n/r)</label> 
     <input type="text" name="erz1vorname" value="<?php echo $_GET['erz1vorname']; ?>" maxlength="30">
     
     <label for="erz1name">Nachname de(s/n) 1. Erziehungsberechtige(n/r)</label> 
@@ -162,10 +163,10 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <h3>Allgemeines</h3>
     
     <label for="notfallnr">Im Notfall tags&uuml;ber erreichbar unter</label> 
-    <input type="text" name="notfallnr" value="<?php echo $_GET['notfallnr']; ?>" maxlength="30"><br>
+    <input type="text" name="notfallnr" value="<?php echo $_GET['notfallnummer']; ?>" maxlength="30"><br>
     
     <label for="foto">Einwilligung f&uuml;r die Ver&ouml;ffentlichung von Fotos ist erteilt:</label> 
-    <input type="text" name="foto" value="<?php echo $_GET['foto']; ?>" maxlength="30"><br>
+    <input type="text" name="foto" value="<?php echo $_GET['einwilligung']; ?>" maxlength="30"><br>
     
     <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" maxlength="30"><br>
     
