@@ -37,10 +37,10 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
 	<label for="ort">Ort</label>  
     <input type="text" name="ort" value="<?php echo $_GET['ort']; ?>" maxlength="20">
     
-    <label for="staat1">1. StaatsangehÃ¶rigkeit</label> 
+    <label for="staat1">1. Staatsangehörigkeit</label> 
     <input type="text" name="staat1" value="<?php echo $_GET['staat1']; ?>" maxlength="30">
     
-    <label for="staat2">2. StaatsangehÃ¶rigkeit</label> 
+    <label for="staat2">2. Staatsangehörigkeit</label> 
     <input type="text" name="staat2" value="<?php echo $_GET['staat2']; ?>" maxlength="30"><br>
     
     <label for="geschlecht">Geschlecht</label> 
