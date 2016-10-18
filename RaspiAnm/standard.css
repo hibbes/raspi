@@ -17,8 +17,9 @@ div {
   
   background-color: #eee;
   padding: 20px;
+  margin: 20px;
   border: 1px solid #8c8c8c;
-  height:700px;
+  height:1100px;
 }
   #kind{
   position: absolute;
@@ -29,7 +30,7 @@ div {
  
   }
   
-  #partner{
+  #schulbesuch{
   position: absolute;
   top:150px;
   left: 700px;
@@ -46,7 +47,7 @@ div {
   }
   
   
-  #schulbesuch{
+  #allgemein{
   position: absolute;
   top: 150px;
   left: 1000px;
@@ -54,14 +55,6 @@ div {
  
   }
   
-   #allgemein{
-  position: absolute;
-  top: 905px;
-  height:120px;
-  
-  width: 94em
- 
-  }
 
 label { /* Beschriftung auf eigener Zeile */
 

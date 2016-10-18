@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="standard.css">	
-<title>Daten-ÃœberprÃ¼fung</title>
+<title>Daten-&Umml;berpr&uuml;fung</title>
 </head>
 <body>
 
 
 	
-Folgende Daten wurden Übermittelt:<p>
+Folgende Daten wurden &uuml;bermittelt:<p>
 
 Eintrags-ID: <?php echo $_GET['id']; ?>
 
@@ -23,9 +23,9 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <input type="text" name="zweitname" value="<?php echo $_GET['rufname']; ?>" maxlength="30">
  
     <label for="zuname">Nachname</label>  
-    <input type="text" name="rufname" value="<?php echo $_GET['rufname']; ?>" maxlength="40"><br>
+    <input type="text" name="name" value="<?php echo $_GET['name']; ?>" maxlength="40"><br>
 
-	<label for="strasse">Straße</label>  
+	<label for="strasse">Stra&szlig;e</label>  
     <input type="text" name="strasse" value="<?php echo $_GET['strasse']; ?>" maxlength="50"><br>
     
     <label for="hausnummer">Nr.</label>  
@@ -37,10 +37,10 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
 	<label for="ort">Ort</label>  
     <input type="text" name="ort" value="<?php echo $_GET['ort']; ?>" maxlength="20">
     
-    <label for="staat1">1. Staatsangehörigkeit</label> 
+    <label for="staat1">1. Staatsangeh&ouml;rigkeit</label> 
     <input type="text" name="staat1" value="<?php echo $_GET['staat1']; ?>" maxlength="30">
     
-    <label for="staat2">2. Staatsangehörigkeit</label> 
+    <label for="staat2">2. Staatsangeh&ouml;rigkeit</label> 
     <input type="text" name="staat2" value="<?php echo $_GET['staat2']; ?>" maxlength="30"><br>
     
     <label for="geschlecht">Geschlecht</label> 
@@ -80,10 +80,10 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <label for="zug">Profilwahl</label> 
     <input type="text" name="profil1" value="<?php echo $_GET['profil1']; ?>" maxlength="90"><br>
     
-    <label for="mit">Möchte in eine Klasse mit</label> 
+    <label for="mit">M&ouml;chte in eine Klasse mit</label> 
     <input type="text" name="mit" value="<?php echo $_GET['inKlassemit']; ?>" maxlength="90"><br>
     
-    <label for="ohne">Möchte  <b>nicht</b>  in eine Klasse mit</label> 
+    <label for="ohne">M&ouml;chte  <b>&nbsp; nicht &nbsp;</b>  in eine Klasse mit</label> 
     <input type="text" name="ohne" value="<?php echo $_GET['nichtinKlassemit']; ?>" maxlength="90"><br>
     </div>
     
@@ -99,7 +99,7 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <label for="erz1geschlecht">Geschlecht</label> 
     <input type="text" name="erz1geschlecht" value="<?php echo $_GET['erz1geschlecht']; ?>" maxlength="5"><br>
     
-    <label for="erz1strasse">Straße</label> 
+    <label for="erz1strasse">Stra&szlig;e</label> 
     <input type="text" name="erz1strasse" value="<?php echo $_GET['erz1strasse']; ?>" maxlength="30"><br>
     
     <label for="erz1hausnummer">Hausnummer</label> 
@@ -131,7 +131,7 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <label for="erz2geschlecht">Geschlecht</label> 
     <input type="text" name="erz2geschlecht" value="<?php echo $_GET['erz2geschlecht']; ?>" maxlength="5"><br>
     
-     <label for="erz2strasse">Straße r</label> 
+     <label for="erz2strasse">Stra&szlig;e</label> 
     <input type="text" name="erz2strasse" value="<?php echo $_GET['erz2strasse']; ?>" maxlength="30"><br>
     
     <label for="erz1hausnummer">Hausnummer</label> 
@@ -161,10 +161,10 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <div id="allgemein">
     <h3>Allgemeines</h3>
     
-    <label for="notfallnr">Im Notfall tagsüber erreichbar unter</label> 
+    <label for="notfallnr">Im Notfall tags&uuml;ber erreichbar unter</label> 
     <input type="text" name="notfallnr" value="<?php echo $_GET['notfallnr']; ?>" maxlength="30"><br>
     
-    <label for="foto">Einwilligung für die Veröffentlichung von Fotos ist erteilt:</label> 
+    <label for="foto">Einwilligung f&uuml;r die Ver&ouml;ffentlichung von Fotos ist erteilt:</label> 
     <input type="text" name="foto" value="<?php echo $_GET['foto']; ?>" maxlength="30"><br>
     
     <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" maxlength="30"><br>
