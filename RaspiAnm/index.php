@@ -23,7 +23,7 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <input type="text" name="zweitname" value="<?php echo $_GET['rufname']; ?>" maxlength="30">
  
     <label for="zuname">Nachname</label>  
-    <input type="text" name="rufname" value="<?php echo $_GET['zuname']; ?>" maxlength="40"><br>
+    <input type="text" name="rufname" value="<?php echo $_GET['rufname']; ?>" maxlength="40"><br>
 
 	<label for="strasse">Straﬂe</label>  
     <input type="text" name="strasse" value="<?php echo $_GET['strasse']; ?>" maxlength="50"><br>
@@ -57,8 +57,7 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     
     <label for="muttersprache">Muttersprache</label> 
     <input type="text" name="muttersprache" value="<?php echo $_GET['muttersprache']; ?>" maxlength="30"><br>
- 
-      
+       
 	<label for="bekenntnis">Bekenntnis</label> 
     <input type="text" name="bekenntnis" value="<?php echo $_GET['bekenntnis']; ?>" maxlength="30"><br>
     
@@ -109,8 +108,12 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <label for="erz1ort">Ort</label> 
     <input type="text" name="erz1ort" value="<?php echo $_GET['erz1ort']; ?>" maxlength="30"><br>
     
-    <label for="erz1telefon">Telefon der Eltern</label> 
+    <label for="erz1telefon">Telefon de(s/n) 1. Erziehungsberechtige(n/r)</label> 
     <input type="text" name="erz1telefon" value="<?php echo $_GET['erz1telefon']; ?>" maxlength="30"><br>
+    
+    <label for="erz1telefon2">Telefon de(s/n) 1. Erziehungsberechtige(n/r) (Arbeit)</label> 
+    <input type="text" name="erz1telefon2" value="<?php echo $_GET['erz1telefon2']; ?>" maxlength="30"><br>
+    
     
     <label for="erz1email">E-Mail de(s/n) 1. Erziehungsberechtige(n/r)</label> 
     <input type="text" name="erz1email" value="<?php echo $_GET['erz1email']; ?>" maxlength="30"><br>
@@ -135,6 +138,10 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     
     <label for="erz2telefon">Telefon de(s/n) 2. Erziehungsberechtige(n/r)</label> 
     <input type="text" name="erz2telefon" value="<?php echo $_GET['erz2telefon']; ?>" maxlength="30"><br>
+    
+    <label for="erz2telefon2">Telefon de(s/n) 2. Erziehungsberechtige(n/r) (Arbeit)</label> 
+    <input type="text" name="erz2telefon2" value="<?php echo $_GET['erz2telefon2']; ?>" maxlength="30"><br>
+    
     
     <label for="erz2email">E-Mail de(s/n) 2. Erziehungsberechtige(n/r)</label> 
     <input type="text" name="erz2email" value="<?php echo $_GET['erz2email']; ?>" maxlength="30"><br>
