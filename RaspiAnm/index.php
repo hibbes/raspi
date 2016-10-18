@@ -63,7 +63,7 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <input type="text" name="muttersprache" value="<?php echo $_GET['muttersprache']; ?>" maxlength="30"><br>
        
 	    <label for="schule">abgebende Schule </label> 
-    <input type="text" name="abgebendeSchule" value="<?php echo $_GET['abgebendeSchule']; ?>" maxlength="60">
+    <input type="text" name="abgebendeschule" value="<?php echo $_GET['abgebendeSchule']; ?>" maxlength="60">
            
     <label for="geschwister">Geschwister in Schiller-Klasse</label> 
     <input type="text" name="geschwister" value="<?php echo $_GET['geschwister']; ?>" maxlength="100"><br>
