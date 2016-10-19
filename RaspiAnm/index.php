@@ -11,7 +11,38 @@
 	
 Folgende Daten wurden &uuml;bermittelt:<p>
 
-Eintrags-ID: <?php echo $_GET['id']; ?>
+Eintrags-ID: <?php echo $_GET['id']; 
+
+$erz1strasse = $_GET["erz1strasse"];
+$erz1hausnummer = $_GET["erz1hausnummer"];
+$erz1ort = $_GET["erz1ort"];
+$erz1plz = $_GET["erz1plz"];
+$erz2name = $_GET["erz2name"];
+$erz2strasse = $_GET["erz2strasse"];
+$erz2hausnummer = $_GET["erz2hausnummer"];
+$erz2ort = $_GET["erz2ort"];
+$erz2plz = $_GET["erz2plz"];
+
+
+
+if(empty($erz1strasse)){
+	$erz1strasse = $_GET["strasse"];
+	$erz1hausnummer = $_GET["hausnummer"];
+	$erz1ort = $_GET["ort"];
+	$erz1plz = $_GET["plz"];
+}
+
+if(!empty($erz2name) && empty($erz2strasse)){
+	$erz2strasse = $erz1strasse;
+	$erz2hausnummer = $erz1hausnummer;
+	$erz2ort = $erz1ort;
+	$erz2plz = $erz1plz;
+		
+}
+
+
+
+?>
 
 <div id="kind">
 <form action="http://192.168.0.107/eintragen.php" method="post">
@@ -101,17 +132,17 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <input type="text" name="erz1geschlecht" value="<?php echo $_GET['erz1geschlecht']; ?>" maxlength="5"><br>
     
     <label for="erz1strasse">Stra&szlig;e</label> 
-    <input type="text" name="erz1strasse" value="<?php echo $_GET['erz1strasse']; ?>" maxlength="30"><br>
+    <input type="text" name="erz1strasse" value="<?php echo $erz1strasse; ?>" maxlength="30"><br>
     
     <label for="erz1hausnummer">Hausnummer</label> 
-    <input type="text" name="erz1hausnummer" value="<?php echo $_GET['erz1hausnummer']; ?>" maxlength="30"><br>
+    <input type="text" name="erz1hausnummer" value="<?php echo $erz1hausnummer; ?>" maxlength="30"><br>
     
     
     <label for="erz1plz">Postleitzahl</label> 
-    <input type="text" name="erz1plz" value="<?php echo $_GET['erz1plz']; ?>" maxlength="30">
+    <input type="text" name="erz1plz" value="<?php echo $erz1plz; ?>" maxlength="30">
     
     <label for="erz1ort">Ort</label> 
-    <input type="text" name="erz1ort" value="<?php echo $_GET['erz1ort']; ?>" maxlength="30"><br>
+    <input type="text" name="erz1ort" value="<?php echo $erz1ort; ?>" maxlength="30"><br>
     
     <label for="erz1telefon">Telefon de(s/n) 1. Erziehungsberechtige(n/r)</label> 
     <input type="text" name="erz1telefon" value="<?php echo $_GET['erz1telefon']; ?>" maxlength="30"><br>
@@ -135,16 +166,16 @@ Eintrags-ID: <?php echo $_GET['id']; ?>
     <input type="text" name="erz2geschlecht" value="<?php echo $_GET['erz2geschlecht']; ?>" maxlength="5"><br>
     
      <label for="erz2strasse">Stra&szlig;e</label> 
-    <input type="text" name="erz2strasse" value="<?php echo $_GET['erz2strasse']; ?>" maxlength="30"><br>
+    <input type="text" name="erz2strasse" value="<?php echo $erz2strasse; ?>" maxlength="30"><br>
     
     <label for="erz1hausnummer">Hausnummer</label> 
-    <input type="text" name="erz2hausnummer" value="<?php echo $_GET['erz2hausnummer']; ?>" maxlength="30"><br>
+    <input type="text" name="erz2hausnummer" value="<?php echo $erz2hausnummer; ?>" maxlength="30"><br>
         
     <label for="erz2plz">Postleitzahl</label> 
-    <input type="text" name="erz2plz" value="<?php echo $_GET['erz2plz']; ?>" maxlength="30">
+    <input type="text" name="erz2plz" value="<?php echo $erz2plz; ?>" maxlength="30">
     
     <label for="erz2ort">Ort</label> 
-    <input type="text" name="erz2ort" value="<?php echo $_GET['erz2ort']; ?>" maxlength="30"><br>
+    <input type="text" name="erz2ort" value="<?php echo $erz2ort; ?>" maxlength="30"><br>
     
     <label for="erz2telefon">Telefon de(s/n) 2. Erziehungsberechtige(n/r)</label> 
     <input type="text" name="erz2telefon" value="<?php echo $_GET['erz2telefon']; ?>" maxlength="30"><br>
