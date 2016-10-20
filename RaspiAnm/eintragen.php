@@ -159,7 +159,7 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$erz2hausnummer', 
 	'$erz2plz', 
 	'$erz2ort',
-	'$erz2teilort',
+	'$erz2teilort', 
 	'$erz2telefon', 
 	'$erz2telefon2', 
 	'$erz2handy', 

@@ -29,7 +29,7 @@ $erz1telefon1 = $_GET["erz1telefon1"];
 
 
 
-if(empty($erz1strasse)){
+if(empty($erz1strasse)){ 
 	$erz1strasse = $_GET["strasse"];
 	$erz1hausnummer = $_GET["hausnummer"];
 	$erz1ort = $_GET["ort"];
