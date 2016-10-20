@@ -16,12 +16,16 @@ Eintrags-ID: <?php echo $_GET['id'];
 $erz1strasse = $_GET["erz1strasse"];
 $erz1hausnummer = $_GET["erz1hausnummer"];
 $erz1ort = $_GET["erz1ort"];
+$erz1teilort = $_GET["erz1teilort"];
 $erz1plz = $_GET["erz1plz"];
 $erz2name = $_GET["erz2name"];
 $erz2strasse = $_GET["erz2strasse"];
 $erz2hausnummer = $_GET["erz2hausnummer"];
 $erz2ort = $_GET["erz2ort"];
+$erz2teilort = $_GET["erz2teilort"];
 $erz2plz = $_GET["erz2plz"];
+$erz1telefon1 = $_GET["erz1telefon1"];
+
 
 
 
@@ -30,14 +34,16 @@ if(empty($erz1strasse)){
 	$erz1hausnummer = $_GET["hausnummer"];
 	$erz1ort = $_GET["ort"];
 	$erz1plz = $_GET["plz"];
+	$erz1teilort = $_GET["teilort"];
 }
 
 if(!empty($erz2name) && empty($erz2strasse)){
 	$erz2strasse = $erz1strasse;
 	$erz2hausnummer = $erz1hausnummer;
 	$erz2ort = $erz1ort;
+	$erz2teilort = $erz1teilort;
 	$erz2plz = $erz1plz;
-		
+	$erz2telefon1  = $erz1telefon1;
 }
 
 
@@ -67,6 +73,9 @@ if(!empty($erz2name) && empty($erz2strasse)){
     
 	<label for="ort">Ort</label>  
     <input type="text" name="ort" value="<?php echo $_GET['ort']; ?>" maxlength="20">
+    
+    <label for="teilort">Teilort</label>  
+    <input type="text" name="teilort" value="<?php echo $_GET['teilort']; ?>" maxlength="30">
     
     <label for="staat1">1. Staatsangeh&ouml;rigkeit</label> 
     <input type="text" name="staat1" value="<?php echo $_GET['staat1']; ?>" maxlength="30">
@@ -101,7 +110,7 @@ if(!empty($erz2name) && empty($erz2strasse)){
     </div>
     
     <div id="schulbesuch">
-    <h3>Wahl für Schulbesuch</h3>
+    <h3>Wahl f&uuml;r Schulbesuch</h3>
     
     <label for="sprachwahl">Sprachwahl</label> 
     <input type="text" name="fremdsprache" value="<?php echo $_GET['fremdsprache']; ?>" maxlength="90"><br>
@@ -109,8 +118,9 @@ if(!empty($erz2name) && empty($erz2strasse)){
     <label for="reli">Religionsunterricht</label> 
     <input type="text" name="reli" value="<?php echo $_GET['reli']; ?>" maxlength="90"><br>
         
-    <label for="profil1">Profilwahl</label> 
-    <input type="text" name="profil1" value="<?php echo $_GET['profil1']; ?>" maxlength="90"><br>
+    <label for="klasse">Profilwahl</label>
+    5x=Musikzug 5y=bilingual 5z=normal 
+    <input type="text" name="klasse" value="<?php echo $_GET['profil1']; ?>" maxlength="90"><br>
     
     <label for="mit">M&ouml;chte in eine Klasse mit</label> 
     <input type="text" name="mit" value="<?php echo $_GET['inKlassemit']; ?>" maxlength="90"><br>
@@ -144,8 +154,11 @@ if(!empty($erz2name) && empty($erz2strasse)){
     <label for="erz1ort">Ort</label> 
     <input type="text" name="erz1ort" value="<?php echo $erz1ort; ?>" maxlength="30"><br>
     
-    <label for="erz1telefon">Telefon de(s/n) 1. Erziehungsberechtige(n/r)</label> 
-    <input type="text" name="erz1telefon" value="<?php echo $_GET['erz1telefon']; ?>" maxlength="30"><br>
+    <label for="erz1teilort">Teilort de(s/n) 1. Erziehungsberechtigen</label>  
+    <input type="text" name="erz1teilort" value="<?php echo $erz1teilort; ?>" maxlength="30">
+    
+    <label for="erz1telefon1">Telefon de(s/n) 1. Erziehungsberechtigen</label> 
+    <input type="text" name="erz1telefon1" value="<?php echo $_GET['erz1telefon1']; ?>" maxlength="30"><br>
     
     <label for="erz1telefon2">Telefon de(s/n) 1. Erziehungsberechtige(n/r) (Arbeit)</label> 
     <input type="text" name="erz1telefon2" value="<?php echo $_GET['erz1telefon2']; ?>" maxlength="30"><br>
@@ -162,6 +175,7 @@ if(!empty($erz2name) && empty($erz2strasse)){
     <label for="erz2name">Nachname de(s/r) 2. Erziehungsberechtige(n/r)</label> 
     <input type="text" name="erz2name" value="<?php echo $_GET['erz2name']; ?>" maxlength="30"><br>
     
+        
     <label for="erz2geschlecht">Geschlecht</label> 
     <input type="text" name="erz2geschlecht" value="<?php echo $_GET['erz2geschlecht']; ?>" maxlength="5"><br>
     
@@ -177,8 +191,11 @@ if(!empty($erz2name) && empty($erz2strasse)){
     <label for="erz2ort">Ort</label> 
     <input type="text" name="erz2ort" value="<?php echo $erz2ort; ?>" maxlength="30"><br>
     
-    <label for="erz2telefon">Telefon de(s/n) 2. Erziehungsberechtige(n/r)</label> 
-    <input type="text" name="erz2telefon" value="<?php echo $_GET['erz2telefon']; ?>" maxlength="30"><br>
+    <label for="erz2teilort">Teilort de(s/n) 2. Erziehungsberechtigen</label>  
+    <input type="text" name="erz2teilort" value="<?php echo $erz2teilort; ?>" maxlength="30">
+    
+    <label for="erz2telefon1">Telefon de(s/n) 2. Erziehungsberechtige(n/r)</label> 
+    <input type="text" name="erz2telefon1" value="<?php echo $erz2telefon1; ?>" maxlength="30"><br>
     
     <label for="erz2telefon2">Telefon de(s/n) 2. Erziehungsberechtige(n/r) (Arbeit)</label> 
     <input type="text" name="erz2telefon2" value="<?php echo $_GET['erz2telefon2']; ?>" maxlength="30"><br>
@@ -195,10 +212,7 @@ if(!empty($erz2name) && empty($erz2strasse)){
         
     <div id="allgemein">
     <h3>Allgemeines</h3>
-    
-    <label for="notfallnr">Im Notfall tags&uuml;ber erreichbar unter</label> 
-    <input type="text" name="notfallnr" value="<?php echo $_GET['notfallnummer']; ?>" maxlength="30"><br>
-    
+          
     <label for="foto">Einwilligung f&uuml;r die Ver&ouml;ffentlichung von Fotos ist erteilt:</label> 
     <input type="text" name="foto" value="<?php echo $_GET['einwilligung']; ?>" maxlength="30"><br>
     
