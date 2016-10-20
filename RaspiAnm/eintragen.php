@@ -30,8 +30,9 @@ $erz1geschlecht = $_POST['erz1geschlecht'];
 $erz1strasse = $_POST["erz1strasse"];
 $erz1hausnummer = $_POST["erz1hausnummer"];
 $erz1ort = $_POST["erz1ort"];
+$erz1teilort = $_POST["erz1teilort"];
 $erz1plz = $_POST["erz1plz"];
-$erz1telefon = $_POST["erz1telefon"];
+$erz1telefon1 = $_POST["erz1telefon1"];
 $erz1telefon2 = $_POST["erz1telefon2"];
 $erz1email = $_POST["erz1email"];
 $erz1handy = $_POST["erz1handy"];
@@ -47,8 +48,9 @@ $erz2name = $_POST["erz2name"];
 $erz2strasse = $_POST["erz2strasse"];
 $erz2hausnummer = $_POST["erz2hausnummer"];
 $erz2ort = $_POST["erz2ort"];
+$erz2teilort = $_POST["erz2teilort"];
 $erz2plz = $_POST["erz2plz"];
-$erz2telefon = $_POST["erz2telefon"];
+$erz2telefon1 = $_POST["erz2telefon1"];
 $erz2telefon2 = $_POST["erz2telefon2"];
 $erz2email = $_POST["erz2email"];
 $erz2handy = $_POST["erz2handy"];
@@ -97,7 +99,7 @@ if(mysqli_num_rows($ergebnis)==0){
 		Erz1PLZ, 
 		Erz1Ort,
 		Erz1Teilort,
-		Erz1Telefon, 
+		Erz1Telefon1, 
 		Erz1Telefon2, 
 		Erz1Handy, 
 		Erz1Email, 
@@ -109,7 +111,7 @@ if(mysqli_num_rows($ergebnis)==0){
 		Erz2PLZ, 
 		Erz2Ort,
 		Erz2Teilort,
-		Erz2Telefon, 
+		Erz2Telefon1, 
 		Erz2Telefon2, 
 		Erz2Handy, 
 		Erz2Email, 
@@ -148,7 +150,7 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$erz1plz', 
 	'$erz1ort',
 	'$erz1teilort',
-	'$erz1telefon', 
+	'$erz1telefon1', 
 	'$erz1telefon2', 
 	'$erz1handy', 
 	'$erz1email',
@@ -160,7 +162,7 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$erz2plz', 
 	'$erz2ort',
 	'$erz2teilort', 
-	'$erz2telefon', 
+	'$erz2telefon1', 
 	'$erz2telefon2', 
 	'$erz2handy', 
 	'$erz2email', 
