@@ -62,7 +62,7 @@ if(!empty($erz2name) && empty($erz2strasse)){
     <label for="zuname">Nachname</label>  
     <input type="text" name="name" value="<?php echo $_GET['name']; ?>" maxlength="40"><br>
 
-	<label for="strasse">Stra&szlig;e</label>  
+	<label for="strasse">Stra&szlig;e </label>  
     <input type="text" name="strasse" value="<?php echo $_GET['strasse']; ?>" maxlength="50"><br>
     
     <label for="hausnummer">Nr.</label>  
@@ -131,11 +131,12 @@ if(!empty($erz2name) && empty($erz2strasse)){
     
     <div id="eltern">
     
-    <h3>Eltern</h3>
-    <label for="erz1vorname">Name de(s/n) 1. Erziehungsberechtige(n/r)</label> 
+    <h3>Erziehungsberechtigte</h3>
+    <h4>1. Erziehungsberechtigte(r)</h4>
+    <label for="erz1vorname">Name</label> 
     <input type="text" name="erz1vorname" value="<?php echo $_GET['erz1vorname']; ?>" maxlength="30">
     
-    <label for="erz1name">Nachname de(s/n) 1. Erziehungsberechtige(n/r)</label> 
+    <label for="erz1name">Nachname</label> 
     <input type="text" name="erz1name" value="<?php echo $_GET['erz1name']; ?>" maxlength="30"><br>
     
     <label for="erz1geschlecht">Geschlecht</label> 
@@ -154,25 +155,27 @@ if(!empty($erz2name) && empty($erz2strasse)){
     <label for="erz1ort">Ort</label> 
     <input type="text" name="erz1ort" value="<?php echo $erz1ort; ?>" maxlength="30"><br>
     
-    <label for="erz1teilort">Teilort de(s/n) 1. Erziehungsberechtigen</label>  
+    <label for="erz1teilort">Teilort de(s/n)</label>  
     <input type="text" name="erz1teilort" value="<?php echo $erz1teilort; ?>" maxlength="30">
     
-    <label for="erz1telefon1">Telefon de(s/n) 1. Erziehungsberechtigen</label> 
+    <label for="erz1telefon1">Telefon (privat)</label> 
     <input type="text" name="erz1telefon1" value="<?php echo $_GET['erz1telefon1']; ?>" maxlength="30"><br>
     
-    <label for="erz1telefon2">Telefon de(s/n) 1. Erziehungsberechtige(n/r) (Arbeit)</label> 
+    <label for="erz1telefon2">Telefon (Arbeit)</label> 
     <input type="text" name="erz1telefon2" value="<?php echo $_GET['erz1telefon2']; ?>" maxlength="30"><br>
     
-     <label for="erz1handy">Mobilnr. de(s/n) 1. Erziehungsberechtige(n/r)</label> 
+     <label for="erz1handy">Mobilnr</label> 
     <input type="text" name="erz1handy" value="<?php echo $_GET['erz1mobil']; ?>" maxlength="30"><br>
     
-    <label for="erz1email">E-Mail de(s/n) 1. Erziehungsberechtige(n/r)</label> 
+    <label for="erz1email">E-Mail</label> 
     <input type="text" name="erz1email" value="<?php echo $_GET['erz1email']; ?>" maxlength="30"><br>
     
-     <label for="erz2vorname">Vorname de(s/r) 2. Erziehungsberechtige(n/r)</label> 
+    <h4>2. Erziehungsberechtigte(r)</h4>
+    
+     <label for="erz2vorname">Vorname</label> 
     <input type="text" name="erz2vorname" value="<?php echo $_GET['erz2vorname']; ?>" maxlength="30">
     
-    <label for="erz2name">Nachname de(s/r) 2. Erziehungsberechtige(n/r)</label> 
+    <label for="erz2name">Nachname</label> 
     <input type="text" name="erz2name" value="<?php echo $_GET['erz2name']; ?>" maxlength="30"><br>
     
         
@@ -191,19 +194,19 @@ if(!empty($erz2name) && empty($erz2strasse)){
     <label for="erz2ort">Ort</label> 
     <input type="text" name="erz2ort" value="<?php echo $erz2ort; ?>" maxlength="30"><br>
     
-    <label for="erz2teilort">Teilort de(s/n) 2. Erziehungsberechtigen</label>  
+    <label for="erz2teilort">Teilort</label>  
     <input type="text" name="erz2teilort" value="<?php echo $erz2teilort; ?>" maxlength="30">
     
-    <label for="erz2telefon1">Telefon de(s/n) 2. Erziehungsberechtige(n/r)</label> 
+    <label for="erz2telefon1">Telefon (privat)</label> 
     <input type="text" name="erz2telefon1" value="<?php echo $erz2telefon1; ?>" maxlength="30"><br>
     
-    <label for="erz2telefon2">Telefon de(s/n) 2. Erziehungsberechtige(n/r) (Arbeit)</label> 
+    <label for="erz2telefon2">Telefon (Arbeit)</label> 
     <input type="text" name="erz2telefon2" value="<?php echo $_GET['erz2telefon2']; ?>" maxlength="30"><br>
     
-      <label for="erz2handy">Mobilnr. de(s/n) 2. Erziehungsberechtige(n/r)</label> 
+      <label for="erz2handy">Mobilnr.</label> 
     <input type="text" name="erz2handy" value="<?php echo $_GET['erz2mobil']; ?>" maxlength="30"><br>
     
-    <label for="erz2email">E-Mail de(s/n) 2. Erziehungsberechtige(n/r)</label> 
+    <label for="erz2email">E-Mail</label> 
     <input type="text" name="erz2email" value="<?php echo $_GET['erz2email']; ?>" maxlength="30"><br>
     
     
