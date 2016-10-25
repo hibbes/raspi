@@ -1,6 +1,8 @@
 <?php
 include("dbconnect.php");
 
+/* Die Variablen werden (diesmal via POST) übernommen und lokal gespeichert. */
+
 $eintrags_id = $_POST["id"];
 
 $name = $_POST["name"];
@@ -63,12 +65,16 @@ $mit = $_POST["mit"];
 $ohne = $_POST["ohne"];
 
 
-
+/* Hier wird geprüft, ob es bereits einen Datensatz mit der übergebenen Eintrags-ID gibt. 
+ * Wenn ja, wird der Import mit dem Hinweis auf eine Doppeleintragung abgebrochen (siehe vorletzte Zeile) */
 
 $abfrage = "SELECT ID FROM Anmeldungen WHERE Eintrags_ID = '$eintrags_id'";
 $ergebnis = mysqli_query($db, $abfrage);
 
 echo "Formular-ID ist $eintrags_id";
+
+
+/* Die nun genannten Werte repräsentieren unsere Anmelde-SQL-Tabelle. Einige ASV-Felder, die für uns nicht relevant sind, fragen wir nicht ab */
 
 if(mysqli_num_rows($ergebnis)==0){
 	$eintrag = "INSERT INTO Anmeldungen (
