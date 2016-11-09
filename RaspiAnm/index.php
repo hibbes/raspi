@@ -102,8 +102,11 @@ if(!empty($erz2name) && empty($erz2strasse)){
     <label for="muttersprache">Muttersprache</label> 
     <input type="text" name="muttersprache" value="<?php echo $_GET['muttersprache']; ?>" maxlength="30"><br>
        
-	    <label for="schule">abgebende Schule </label> 
+	<label for="schule">ID der abgebenden Schule </label> 
     <input type="text" name="abgebendeschule" value="<?php echo $_GET['abgebendeSchule']; ?>" maxlength="60">
+    
+    <label for="sonstigeschule">sonstige Schule</label> 
+    <input type="text" name="sonstigeSchule" value="<?php echo $_GET['sonstigeSchule']; ?>" maxlength="60">
            
     <label for="geschwister">Geschwister in Schiller-Klasse</label> 
     <input type="text" name="geschwister" value="<?php echo $_GET['geschwister']; ?>" maxlength="100"><br>
