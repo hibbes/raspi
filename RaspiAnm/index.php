@@ -1,3 +1,7 @@
+<!-- In diesem Script wird ein HTML-Formular erzeugt, in das die in der URL übergebenen Daten voreingetragen werden. 
+Das Formular kann von unseren Sekretärinnen nachbearbeitet werden. Der Send-Button schickt die Daten dann in die Anmelde-Datenbank (eintragen.php)
+Prinzipiell kann das Formular auch für die analoge Schüleraufnahme verwendet werden. Formatiert wird das über standard.css-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +14,8 @@
 
 	
 Folgende Daten wurden &uuml;bermittelt:<p>
+
+<!--  Daten werden mit GET aus der URL ausgelesen und in lokale Variablen gespeichert -->
 
 Eintrags-ID: <?php echo $_GET['id']; 
 
@@ -27,7 +33,7 @@ $erz2plz = $_GET["erz2plz"];
 $erz1telefon1 = $_GET["erz1telefon1"];
 
 
-
+/* Wenn die Adressdaten des Erziehers 1 leer bleiben, werden die Adressdaten des Schülers dorthin übernommen */
 
 if(empty($erz1strasse)){ 
 	$erz1strasse = $_GET["strasse"];
@@ -36,6 +42,10 @@ if(empty($erz1strasse)){
 	$erz1plz = $_GET["plz"];
 	$erz1teilort = $_GET["teilort"];
 }
+
+/* Wenn die Name des Erziehers 2 gegeben ist aber die Straße des Erziehers 2 leer bleibt, werden die Adressdaten des Erziehers 1 dorthin übernommen 
+ * Falls dann später der Erzieher 2 zum ELternsprecher gewählt werden sollte o.ä., sind dann auch hier die Adressdaten vorhanden
+ * */
 
 if(!empty($erz2name) && empty($erz2strasse)){
 	$erz2strasse = $erz1strasse;
@@ -49,6 +59,7 @@ if(!empty($erz2name) && empty($erz2strasse)){
 
 
 ?>
+<!-- Das Formular wird generiert -->
 
 <div id="kind">
 <form action="http://192.168.0.107/eintragen.php" method="post">
@@ -102,11 +113,8 @@ if(!empty($erz2name) && empty($erz2strasse)){
     <label for="muttersprache">Muttersprache</label> 
     <input type="text" name="muttersprache" value="<?php echo $_GET['muttersprache']; ?>" maxlength="30"><br>
        
-	<label for="schule">ID der abgebenden Schule </label> 
+	    <label for="schule">abgebende Schule </label> 
     <input type="text" name="abgebendeschule" value="<?php echo $_GET['abgebendeSchule']; ?>" maxlength="60">
-    
-    <label for="sonstigeschule">sonstige Schule</label> 
-    <input type="text" name="sonstigeSchule" value="<?php echo $_GET['sonstigeSchule']; ?>" maxlength="60">
            
     <label for="geschwister">Geschwister in Schiller-Klasse</label> 
     <input type="text" name="geschwister" value="<?php echo $_GET['geschwister']; ?>" maxlength="100"><br>
@@ -215,6 +223,7 @@ if(!empty($erz2name) && empty($erz2strasse)){
     
     </div>
     
+   <!-- Hier folgen neben der Fotoeinwilligung noch die ID, die unser Wordpress für jedes ausgehende Formular generiert und das Datum des Eintrags -->
         
     <div id="allgemein">
     <h3>Allgemeines</h3>
