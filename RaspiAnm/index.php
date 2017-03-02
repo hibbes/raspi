@@ -227,7 +227,7 @@ if(!empty($erz2name) && empty($erz2strasse)){
     
     </div>
     
-   <!-- Hier folgen neben der Fotoeinwilligung noch die ID, die unser Wordpress fÃ¼r jedes ausgehende Formular generiert und das Datum des Eintrags -->
+   <!-- Hier folgen neben der Fotoeinwilligung noch die ID, die unser Wordpress für jedes ausgehende Formular generiert und das Datum des Eintrags -->
         
     <div id="allgemein">
     <h3>Allgemeines</h3>
