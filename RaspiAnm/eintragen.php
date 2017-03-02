@@ -25,6 +25,7 @@ $zug = $_POST["zug"];
 $strasse = $_POST["strasse"];
 $hausnummer = $_POST["hausnummer"];
 $ort = $_POST["ort"];
+$teilort = $_POST["teilort"];
 $plz = $_POST["plz"];
 $erz1vorname = $_POST["erz1vorname"];
 $erz1name = $_POST["erz1name"];
