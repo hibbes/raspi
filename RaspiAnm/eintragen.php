@@ -1,5 +1,6 @@
 <?php
 include("dbconnect.php");
+
 /* Die Variablen werden (diesmal via POST) übernommen und lokal gespeichert. */
 
 $eintrags_id = $_POST["id"];
