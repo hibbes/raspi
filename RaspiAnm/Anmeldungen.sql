@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Erstellungszeit: 30. Jan 2017 um 20:24
+-- Erstellungszeit: 27. Feb 2017 um 20:20
 -- Server Version: 5.5.52
 -- PHP-Version: 5.4.45-0+deb7u5
 
@@ -83,8 +83,10 @@ CREATE TABLE IF NOT EXISTS `Anmeldungen` (
   `Geschwister` varchar(80) NOT NULL,
   `Klassenpartner` varchar(80) NOT NULL,
   `nichtKlassenpartner` varchar(80) NOT NULL,
+  `erz2sorgerecht` varchar(5) NOT NULL,
+  `erz2auskunftsrecht` varchar(5) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
