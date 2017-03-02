@@ -15,7 +15,7 @@ Prinzipiell kann das Formular auch für die analoge Schüleraufnahme verwendet w
 	
 Folgende Daten wurden &uuml;bermittelt:<p>
 
-<!--  Daten werden mit GET aus der URL ausgelesen und in lokale Variablen gespeichert -->
+<!--  Daten, die mit IF-Abfragen an dieser Stelle behandelt werden, werden mit GET aus der URL ausgelesen und in lokale Variablen gespeichert Der Rest wir direkt mit Get geholt -->
 
 Eintrags-ID: <?php echo $_GET['id']; 
 
@@ -31,6 +31,7 @@ $erz2ort = $_GET["erz2ort"];
 $erz2teilort = $_GET["erz2teilort"];
 $erz2plz = $_GET["erz2plz"];
 $erz1telefon1 = $_GET["erz1telefon1"];
+
 
 
 /* Wenn die Adressdaten des Erziehers 1 leer bleiben, werden die Adressdaten des Schülers dorthin übernommen */
@@ -187,7 +188,13 @@ if(!empty($erz2name) && empty($erz2strasse)){
     
     <h4>2. Erziehungsberechtigte(r)</h4>
     
-     <label for="erz2vorname">Vorname</label> 
+    <label for="erz2sorgerecht">Sorgerecht</label> 
+    <input type="text" name="erz2sorgerecht" value="<?php echo $_GET['erz2sorgerecht']; ?>" maxlength="5">
+    
+    <label for="erz2auskunftsrecht">Auskunftsrecht</label> 
+    <input type="text" name="erz2auskunftsrecht" value="<?php echo $_GET['erz2auskunftsrecht']; ?>" maxlength="5">
+    
+    <label for="erz2vorname">Vorname</label> 
     <input type="text" name="erz2vorname" value="<?php echo $_GET['erz2vorname']; ?>" maxlength="30">
     
     <label for="erz2name">Nachname</label> 

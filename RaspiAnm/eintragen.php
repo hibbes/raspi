@@ -39,7 +39,8 @@ $erz1telefon2 = $_POST["erz1telefon2"];
 $erz1email = $_POST["erz1email"];
 $erz1handy = $_POST["erz1handy"];
 
-
+$erz2sorgerecht = $_POST["erz2sorgerecht"];
+$erz2auskunftsrecht = $_POST["erz2auskunftsrecht"];
 $erz2vorname = $_POST["Erz2Vorname"];
 $erz2name = $_POST["Erz2Name"];
 $erz2geschlecht = $_POST['erz2geschlecht'];
@@ -127,7 +128,9 @@ if(mysqli_num_rows($ergebnis)==0){
 		Foto_Einw, 
 		Geschwister, 
 		Klassenpartner, 
-		nichtKlassenpartner) 
+		nichtKlassenpartner,
+		erz2sorgerecht,
+		erz2auskunftsrecht) 
 	VALUES
 	('$eintrags_id', 
 	'5', 
@@ -178,7 +181,9 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$foto', 
 	'$geschwister', 
 	'$mit', 
-	'$ohne')";
+	'$ohne',
+	'$erz2sorgerecht',
+	'$erz2auskunftsrecht')";
 	
 	$eintragen = mysqli_query($db, $eintrag);
 	echo "<br> Datenbankeintrag erfolgreich!";
