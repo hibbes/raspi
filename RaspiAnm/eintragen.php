@@ -18,7 +18,7 @@ $bekenntnis = $_POST["bekenntnis"];
 $abgebendeschule = $_POST["abgebendeschule"];
 $sprachwahl = $_POST["fremdsprache"];
 $profil1 = $_POST["profil1"];
-$religion = $_POST["religion"];
+$bekenntnis = $_POST["religion"];
 $ru = $_POST["reli"];
 $zug = $_POST["zug"];
 $strasse = $_POST["strasse"];
@@ -142,7 +142,7 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$geburtsland', 
 	'$geschlecht', 
 	'$bekenntnis', 
-	'$reli', 
+	'$ru', 
 	'$land', 
 	'$land2', 
 	'$strasse', 
