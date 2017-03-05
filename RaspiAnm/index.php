@@ -101,7 +101,6 @@ if(!empty($erz2name) && empty($erz2strasse)){
     <label for="bekenntnis">Bekenntnis</label> 
     <input type="text" name="bekenntnis" value="<?php echo $_GET['bekenntnis']; ?>" maxlength="30"><br>
     
-	
 	<label for="geburtsdatum">Geburtsdatum</label> 
     <input type="text" name="geburtsdatum" value="<?php echo $_GET['geburtsdatum']; ?>" maxlength="10">
 	    
