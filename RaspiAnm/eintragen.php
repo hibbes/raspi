@@ -142,7 +142,7 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$geburtsland', 
 	'$geschlecht', 
 	'$bekenntnis', 
-	'$ru', 
+	'$reli', 
 	'$land', 
 	'$land2', 
 	'$strasse', 
