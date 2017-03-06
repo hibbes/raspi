@@ -31,6 +31,7 @@ $erz2ort = $_GET["erz2ort"];
 $erz2teilort = $_GET["erz2teilort"];
 $erz2plz = $_GET["erz2plz"];
 $erz1telefon1 = $_GET["erz1telefon1"];
+$erz2telefon1 = $_GET["erz2telefon1"];
 
 
 
