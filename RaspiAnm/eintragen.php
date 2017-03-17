@@ -15,10 +15,10 @@ $land = $_POST["staat1"];
 $land2 = $_POST["staat2"];
 $muttersprache = $_POST["muttersprache"];
 $bekenntnis = $_POST["bekenntnis"];
+$reinw = $_POST["reinw"];
 $abgebendeschule = $_POST["abgebendeschule"];
 $sprachwahl = $_POST["fremdsprache"];
 $profil1 = $_POST["profil1"];
-$bekenntnis = $_POST["bekenntnis"];
 $ru = $_POST["reli"];
 $zug = $_POST["zug"];
 $strasse = $_POST["strasse"];
@@ -62,6 +62,7 @@ $erz2handy = $_POST["erz2handy"];
 $foto = $_POST["foto"];
 $notfallnr = $_POST["notfallnr"];
 $geschwister = $_POST["geschwister"];
+$schwimmen = $_POST["schwimmen"];
 $mit = $_POST["mit"];
 $ohne = $_POST["ohne"];
 
@@ -130,7 +131,9 @@ if(mysqli_num_rows($ergebnis)==0){
 		Klassenpartner, 
 		nichtKlassenpartner,
 		erz2sorgerecht,
-		erz2auskunftsrecht) 
+		erz2auskunftsrecht,
+		reinw,
+		schwimmen) 
 	VALUES
 	('$eintrags_id', 
 	'5', 
@@ -183,7 +186,9 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$mit', 
 	'$ohne',
 	'$erz2sorgerecht',
-	'$erz2auskunftsrecht')";
+	'$erz2auskunftsrecht',
+	'$reinw',
+	'$schwimmen')";
 	
 	$eintragen = mysqli_query($db, $eintrag);
 	echo "<br> Datenbankeintrag erfolgreich!";

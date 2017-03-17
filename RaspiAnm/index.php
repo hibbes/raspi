@@ -102,6 +102,9 @@ if(!empty($erz2name) && empty($erz2strasse)){
     <label for="bekenntnis">Bekenntnis</label> 
     <input type="text" name="bekenntnis" value="<?php echo $_GET['bekenntnis']; ?>" maxlength="30"><br>
     
+    <label for="reinw">Einwilligung zur Namens&uuml;bermittlung an Religionsgemeinschaft</label> 
+    <input type="text" name="reinw" value="<?php echo $_GET['reinw']; ?>" maxlength="30"><br>
+    
 	<label for="geburtsdatum">Geburtsdatum</label> 
     <input type="text" name="geburtsdatum" value="<?php echo $_GET['geburtsdatum']; ?>" maxlength="10">
 	    
@@ -241,6 +244,9 @@ if(!empty($erz2name) && empty($erz2strasse)){
           
     <label for="foto">Einwilligung f&uuml;r die Ver&ouml;ffentlichung von Fotos ist erteilt:</label> 
     <input type="text" name="foto" value="<?php echo $_GET['einwilligung']; ?>" maxlength="30"><br>
+    
+    <label for="schwimmen">Schwimmf&auml;higkeit (15min ohne Schwimmhilfe)</label> 
+    <input type="text" name="schwimmen" value="<?php echo $_GET['schwimmen']; ?>" maxlength="30"><br>
     
     <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" maxlength="30"><br>
     
