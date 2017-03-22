@@ -5,7 +5,7 @@ Prinzipiell kann das Formular auch für die analoge Schüleraufnahme verwendet w
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="standard.css">	
 <title>Daten-&Uuml;berpr&uuml;fung</title>
 </head>
