@@ -18,7 +18,7 @@ Folgende Daten wurden &uuml;bermittelt:<p>
 <!--  Daten, die mit IF-Abfragen an dieser Stelle behandelt werden, werden mit GET aus der URL ausgelesen und in lokale Variablen gespeichert Der Rest wir direkt mit Get geholt -->
 
 Eintrags-ID: <?php echo $_GET['id']; 
-
+// $name = $_GET["name"];
 $erz1strasse = $_GET["erz1strasse"];
 $erz1hausnummer = $_GET["erz1hausnummer"];
 $erz1ort = $_GET["erz1ort"];

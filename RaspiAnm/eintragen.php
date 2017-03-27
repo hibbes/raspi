@@ -1,7 +1,7 @@
 <?php
 include("dbconnect.php");
 
-/* Die Variablen werden (diesmal via POST) Ã¼bernommen und lokal gespeichert. */
+/* Die Variablen werden (diesmal via POST) übernommen und lokal gespeichert. */
 
 $eintrags_id = $_POST["id"];
 $name = $_POST["name"];
@@ -45,7 +45,6 @@ $erz2vorname = $_POST["Erz2Vorname"];
 $erz2name = $_POST["Erz2Name"];
 $erz2geschlecht = $_POST['erz2geschlecht'];
 
-
 $erz2vorname = $_POST["erz2vorname"];
 $erz2name = $_POST["erz2name"];
 $erz2strasse = $_POST["erz2strasse"];
@@ -57,7 +56,6 @@ $erz2telefon1 = $_POST["erz2telefon1"];
 $erz2telefon2 = $_POST["erz2telefon2"];
 $erz2email = $_POST["erz2email"];
 $erz2handy = $_POST["erz2handy"];
-
 
 $foto = $_POST["foto"];
 $notfallnr = $_POST["notfallnr"];
