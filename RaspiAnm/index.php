@@ -137,9 +137,9 @@ if(!empty($erz2name) && empty($erz2strasse)){
     <label for="reli">Religionsunterricht</label> 
     <input type="text" name="reli" value="<?php echo $_GET['reli']; ?>" maxlength="90"><br>
         
-    <label for="klasse">Profilwahl</label>
+    <label for="profil1">Profilwahl</label>
     5x=Musikzug 5y=bilingual 5z=normal 
-    <input type="text" name="klasse" value="<?php echo $_GET['profil1']; ?>" maxlength="90"><br>
+    <input type="text" name="profil1" value="<?php echo $_GET['profil1']; ?>" maxlength="90"><br>
     
     <label for="mit">M&ouml;chte in eine Klasse mit</label> 
     <input type="text" name="mit" value="<?php echo $_GET['inKlassemit']; ?>" maxlength="90"><br>
