@@ -17,6 +17,7 @@ $muttersprache = $_POST["muttersprache"];
 $bekenntnis = $_POST["bekenntnis"];
 $reinw = $_POST["reinw"];
 $abgebendeschule = $_POST["abgebendeschule"];
+$sonstigeSchule = $_POST["sonstigeSchule"];
 $sprachwahl = $_POST["fremdsprache"];
 $profil1 = $_POST["profil1"];
 $ru = $_POST["reli"];
@@ -121,7 +122,8 @@ if(mysqli_num_rows($ergebnis)==0){
 		Erz2Telefon2, 
 		Erz2Handy, 
 		Erz2Email, 
-		AbgebendeSchule, 
+		AbgebendeSchule,
+		SonstigeSchule,
 		Fremdsprache2,
 		Profil1,
 		Foto_Einw, 
@@ -177,6 +179,7 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$erz2handy', 
 	'$erz2email', 
 	'$abgebendeschule', 
+	'$sonstigeSchule',
 	'$sprachwahl',
 	'$profil1',
 	'$foto', 
