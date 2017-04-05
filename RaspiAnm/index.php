@@ -120,7 +120,7 @@ if(!empty($erz2name) && empty($erz2strasse)){
 	<label for="schule">ID der abgebenden Schule </label> 
     <input type="text" name="abgebendeschule" value="<?php echo $_GET['abgebendeSchule']; ?>" maxlength="60">
     
-     <label for="sonstigeschule">sonstige Schule</label> 
+    <label for="sonstigeschule">sonstige Schule</label> 
     <input type="text" name="sonstigeSchule" value="<?php echo $_GET['sonstigeSchule']; ?>" maxlength="60">
     
            
