@@ -3,6 +3,39 @@ include("dbconnect.php");
 
 /* Die Variablen werden (diesmal via POST) übernommen und lokal gespeichert. */
 
+$array = [
+		"eintrags_id" => $_POST["id"],
+		"name" => $_POST["name"],
+		"vorname" => $_POST["vorname"],
+		"rufname" => $_POST["rufname"],
+		"geschlecht" => $_POST["geschlecht"],
+		"geburtstag" => $_POST["geburtsdatum"],
+		"geburtsort" => $_POST["geburtsort"],
+		"geburtsland" => $_POST["geburtsland"],
+		"land" => $_POST["staat1"],
+		"land2" => $_POST["staat2"],
+		"muttersprache" => $_POST["muttersprache"],
+		"bekenntnis" => $_POST["bekenntnis"],
+		"abgebendeschule" => $_POST["abgebendeschule"],
+		"sprachwahl" => $_POST["fremdsprache"],
+		"profil1" => $_POST["profil1"],
+		"ru" => $_POST["reli"],
+		"zug" => $_POST["zug"],
+		"strasse" => $_POST["strasse"],
+		"hausnummer" => $_POST["hausnummer"],
+		"ort" => $_POST["ort"],
+		"teilort" => $_POST["teilort"],
+		"plz" => $_POST["plz"],
+		"name" => $_POST["name"],
+		"name" => $_POST["name"],
+		"name" => $_POST["name"],
+		"name" => $_POST["name"],
+		"name" => $_POST["name"],
+		"name" => $_POST["name"],
+		
+];
+?>
+
 $eintrags_id = $_POST["id"];
 $name = $_POST["name"];
 $vorname = $_POST["vorname"];
@@ -14,7 +47,6 @@ $geburtsland = $_POST["geburtsland"];
 $land = $_POST["staat1"];
 $land2 = $_POST["staat2"];
 $muttersprache = $_POST["muttersprache"];
-$bekenntnis = $_POST["bekenntnis"];
 $abgebendeschule = $_POST["abgebendeschule"];
 $sprachwahl = $_POST["fremdsprache"];
 $profil1 = $_POST["profil1"];
