@@ -26,16 +26,44 @@ $array = [
 		"ort" => $_POST["ort"],
 		"teilort" => $_POST["teilort"],
 		"plz" => $_POST["plz"],
-		"name" => $_POST["name"],
-		"name" => $_POST["name"],
-		"name" => $_POST["name"],
-		"name" => $_POST["name"],
-		"name" => $_POST["name"],
-		"name" => $_POST["name"],
+		"erz1vorname" => $_POST["erz1vorname"],
+		"erz1name" => $_POST["erz1name"],
+		"erz1geschlecht" => $_POST["erz1geschlecht"],
+		"erz1strasse" => $_POST["erz1strasse"],
+		"erz1hausnummer" => $_POST["erz1hausnummer"],
+		"erz1ort" => $_POST["erz1ort"],
+		"erz1teilort" => $_POST["erz1teilort"],
+		"erz1plz" => $_POST["erz1plz"],
+		"erz1telefon1" => $_POST["erz1telefon1"],
+		"erz1telefon2" => $_POST["erz1telefon2"],
+		"erz1email" => $_POST["erz1email"],
+		"erz1handy" => $_POST["erz1handy"],
+		"erz2sorgerecht" => $_POST["erz2sorgerecht"],
+		"erz2auskunftsrecht" => $_POST["erz2auskunftsrecht"],
+		"erz2vorname" => $_POST["Erz2Vorname"],
+		"erz2name" => $_POST["Erz2Name"],
+		"erz2geschlecht" => $_POST["erz2geschlecht"],
+		"erz2vorname" => $_POST["erz2vorname"],
+		"erz2name" => $_POST["erz2name"],
+		"erz2strasse" => $_POST["erz2strasse"],
+		"erz2hausnummer" => $_POST["erz2hausnummer"],
+		"erz2ort" => $_POST["erz2ort"],
+		"erz2teilort" => $_POST["erz2teilort"],
+		"erz2plz" => $_POST["erz2plz"],
+		"erz2telefon1" => $_POST["erz2telefon1"],
+		"erz2telefon2" => $_POST["erz2telefon2"],
+		"erz2email" => $_POST["erz2email"],
+		"erz2handy" => $_POST["erz2handy"],
+	    "foto" => $_POST["foto"],
+		"notfallnr" => $_POST["notfallnr"],
+		"geschwister" => $_POST["geschwister"],
+		"mit" => $_POST["mit"],
+		"ohne" => $_POST["ohne"],
+		];
 		
-];
-?>
+		
 
+/*
 $eintrags_id = $_POST["id"];
 $name = $_POST["name"];
 $vorname = $_POST["vorname"];
@@ -96,15 +124,15 @@ $notfallnr = $_POST["notfallnr"];
 $geschwister = $_POST["geschwister"];
 $mit = $_POST["mit"];
 $ohne = $_POST["ohne"];
-
+*/
 
 /* Hier wird geprüft, ob es bereits einen Datensatz mit der übergebenen Eintrags-ID gibt. 
  * Wenn ja, wird der Import mit dem Hinweis auf eine Doppeleintragung abgebrochen (siehe vorletzte Zeile) */
 
-$abfrage = "SELECT ID FROM Anmeldungen WHERE Eintrags_ID = '$eintrags_id'";
+$abfrage = "SELECT ID FROM Anmeldungen WHERE Eintrags_ID = '$array[eintrags_id]'";
 $ergebnis = mysqli_query($db, $abfrage);
 
-echo "Formular-ID ist $eintrags_id";
+echo "Formular-ID ist '$array[eintrags_id]'";
 
 
 /* Die nun genannten Werte repräsentieren unsere Anmelde-SQL-Tabelle. Einige ASV-Felder, die für uns nicht relevant sind, fragen wir nicht ab */
@@ -164,58 +192,58 @@ if(mysqli_num_rows($ergebnis)==0){
 		erz2sorgerecht,
 		erz2auskunftsrecht) 
 	VALUES
-	('$eintrags_id', 
+	('$array[eintrags_id]', 
 	'5', 
-	'$name', 
-	'$vorname', 
-	'$rufname', 
-	'$geburtstag', 
-	'$geburtsort', 
-	'$geburtsland', 
-	'$geschlecht', 
-	'$bekenntnis', 
-	'$ru', 
-	'$land', 
-	'$land2', 
-	'$strasse', 
-	'$hausnummer', 
-	'$plz', 
-	'$ort',
-	'$teilort',
-	'$muttersprache', 
-	'$erz1name', 
-	'$erz1vorname', 
-	'$erz1geschlecht', 
-	'$erz1strasse', 
-	'$erz1hausnummer',
-	'$erz1plz', 
-	'$erz1ort',
-	'$erz1teilort',
-	'$erz1telefon1', 
-	'$erz1telefon2', 
-	'$erz1handy', 
-	'$erz1email',
-	'$erz2vorname', 
-	'$erz2name', 
-	'$erz2geschlecht', 
-	'$erz2strasse', 
-	'$erz2hausnummer', 
-	'$erz2plz', 
-	'$erz2ort',
-	'$erz2teilort', 
-	'$erz2telefon1', 
-	'$erz2telefon2', 
-	'$erz2handy', 
-	'$erz2email', 
-	'$abgebendeschule', 
-	'$sprachwahl',
-	'$profil1',
-	'$foto', 
-	'$geschwister', 
-	'$mit', 
-	'$ohne',
-	'$erz2sorgerecht',
-	'$erz2auskunftsrecht')";
+	'$array[name]', 
+	'$array[vorname]', 
+	'$array[rufname]', 
+	'$array[geburtstag]', 
+	'$array[geburtsort]', 
+	'$array[geburtsland]', 
+	'$array[geschlecht]', 
+	'$array[bekenntnis]', 
+	'$array[ru]', 
+	'$array[land]', 
+	'$array[land2]', 
+	'$array[strasse]', 
+	'$array[hausnummer]', 
+	'$array[plz]', 
+	'$array[ort]',
+	'$array[teilort]',
+	'$array[muttersprache]', 
+	'$array[erz1name]', 
+	'$array[erz1vorname]', 
+	'$array[erz1geschlecht]', 
+	'$array[erz1strasse]', 
+	'$array[erz1hausnummer]',
+	'$array[erz1plz]', 
+	'$array[erz1ort]',
+	'$array[erz1teilort]',
+	'$array[erz1telefon1]', 
+	'$array[erz1telefon2]', 
+	'$array[erz1handy]', 
+	'$array[erz1email]',
+	'$array[erz2vorname]', 
+	'$array[erz2name]', 
+	'$array[erz2geschlecht]', 
+	'$array[erz2strasse]', 
+	'$array[erz2hausnummer]', 
+	'$array[erz2plz]', 
+	'$array[erz2ort]',
+	'$array[erz2teilort]', 
+	'$array[erz2telefon1]', 
+	'$array[erz2telefon2]', 
+	'$array[erz2handy]', 
+	'$array[erz2email]', 
+	'$array[abgebendeschule]', 
+	'$array[sprachwahl]',
+	'$array[profil1]',
+	'$array[foto]', 
+	'$array[geschwister]', 
+	'$array[mit]', 
+	'$array[ohne]',
+	'$array[erz2sorgerecht]',
+	'$array[erz2auskunftsrecht]')";
 	
 	$eintragen = mysqli_query($db, $eintrag);
 	echo "<br> Datenbankeintrag erfolgreich!";
