@@ -136,6 +136,8 @@ echo "Formular-ID ist '$array[eintrags_id]'";
 
 /* Die nun genannten Werte repräsentieren unsere Anmelde-SQL-Tabelle. Einige ASV-Felder, die für uns nicht relevant sind, fragen wir nicht ab */
 
+utf8_encode_deep($array);
+
 if(mysqli_num_rows($ergebnis)==0){
 	$eintrag = "INSERT INTO Anmeldungen (
 	Eintrags_ID,
