@@ -75,10 +75,14 @@ $geburtsland = $_POST["geburtsland"];
 $land = $_POST["staat1"];
 $land2 = $_POST["staat2"];
 $muttersprache = $_POST["muttersprache"];
+<<<<<<< Upstream, based on origin/refactor
+=======
+$bekenntnis = $_POST["bekenntnis"];
+$reinw = $_POST["reinw"];
+>>>>>>> a8cd68f Felder zur Einwilligung der Namensübertragung an Religionsgemeinschaften hinzugefügt.
 $abgebendeschule = $_POST["abgebendeschule"];
 $sprachwahl = $_POST["fremdsprache"];
 $profil1 = $_POST["profil1"];
-$bekenntnis = $_POST["bekenntnis"];
 $ru = $_POST["reli"];
 $zug = $_POST["zug"];
 $strasse = $_POST["strasse"];
@@ -122,6 +126,7 @@ $erz2handy = $_POST["erz2handy"];
 $foto = $_POST["foto"];
 $notfallnr = $_POST["notfallnr"];
 $geschwister = $_POST["geschwister"];
+$schwimmen = $_POST["schwimmen"];
 $mit = $_POST["mit"];
 $ohne = $_POST["ohne"];
 */
@@ -190,10 +195,13 @@ if(mysqli_num_rows($ergebnis)==0){
 		Klassenpartner, 
 		nichtKlassenpartner,
 		erz2sorgerecht,
-		erz2auskunftsrecht) 
+		erz2auskunftsrecht,
+		reinw,
+		schwimmen) 
 	VALUES
 	('$array[eintrags_id]', 
 	'5', 
+<<<<<<< Upstream, based on origin/refactor
 	'$array[name]', 
 	'$array[vorname]', 
 	'$array[rufname]', 
@@ -244,6 +252,60 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$array[ohne]',
 	'$array[erz2sorgerecht]',
 	'$array[erz2auskunftsrecht]')";
+=======
+	'$name', 
+	'$vorname', 
+	'$rufname', 
+	'$geburtstag', 
+	'$geburtsort', 
+	'$geburtsland', 
+	'$geschlecht', 
+	'$bekenntnis', 
+	'$ru', 
+	'$land', 
+	'$land2', 
+	'$strasse', 
+	'$hausnummer', 
+	'$plz', 
+	'$ort',
+	'$teilort',
+	'$muttersprache', 
+	'$erz1name', 
+	'$erz1vorname', 
+	'$erz1geschlecht', 
+	'$erz1strasse', 
+	'$erz1hausnummer',
+	'$erz1plz', 
+	'$erz1ort',
+	'$erz1teilort',
+	'$erz1telefon1', 
+	'$erz1telefon2', 
+	'$erz1handy', 
+	'$erz1email',
+	'$erz2vorname', 
+	'$erz2name', 
+	'$erz2geschlecht', 
+	'$erz2strasse', 
+	'$erz2hausnummer', 
+	'$erz2plz', 
+	'$erz2ort',
+	'$erz2teilort', 
+	'$erz2telefon1', 
+	'$erz2telefon2', 
+	'$erz2handy', 
+	'$erz2email', 
+	'$abgebendeschule', 
+	'$sprachwahl',
+	'$profil1',
+	'$foto', 
+	'$geschwister', 
+	'$mit', 
+	'$ohne',
+	'$erz2sorgerecht',
+	'$erz2auskunftsrecht',
+	'$reinw',
+	'$schwimmen')";
+>>>>>>> a8cd68f Felder zur Einwilligung der Namensübertragung an Religionsgemeinschaften hinzugefügt.
 	
 	$eintragen = mysqli_query($db, $eintrag);
 	echo "<br> Datenbankeintrag erfolgreich!";
