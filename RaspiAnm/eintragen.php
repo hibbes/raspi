@@ -61,7 +61,7 @@ $array = [
 		"ohne" => $_POST["ohne"],
 ];
 
-// UTF-8 Konvertierungen
+// Der Datensatz wird auf UTF-8-Codierung geprüft und u.U. konvertiert
 foreach ($array as &$string) {
 
 	if(mb_detect_encoding($string) != 'UTF-8'){
