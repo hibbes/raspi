@@ -61,6 +61,14 @@ $array = [
 		"ohne" => $_POST["ohne"],
 ];
 
+// UTF-8 Konvertierungen
+foreach ($array as &$string) {
+
+	if(mb_detect_encoding($string) != 'UTF-8'){
+		$string = utf8_encode($string); }
+	}
+
+
 
 /* Hier wird geprüft, ob es bereits einen Datensatz mit der übergebenen Eintrags-ID gibt.
  * Wenn ja, wird der Import mit dem Hinweis auf eine Doppeleintragung abgebrochen (siehe vorletzte Zeile) */

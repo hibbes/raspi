@@ -64,7 +64,6 @@ if(!empty($array[erz2name]) && empty($array[erz2strasse])){
 }
 
 
-
 ?>
 <!-- Das Formular wird generiert -->
 
