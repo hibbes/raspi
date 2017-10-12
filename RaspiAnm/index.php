@@ -1,6 +1,6 @@
-<!-- In diesem Script wird ein HTML-Formular erzeugt, in das die in der URL √ºbergebenen Daten voreingetragen werden. 
-Das Formular kann von unseren Sekret√§rinnen nachbearbeitet werden. Der Send-Button schickt die Daten dann in die Anmelde-Datenbank (eintragen.php)
-Prinzipiell kann das Formular auch f√ºr die analoge Sch√ºleraufnahme verwendet werden. Formatiert wird das √ºber standard.css-->
+<!-- In diesem Script wird ein HTML-Formular erzeugt, in das die in der URL ¸bergebenen Daten voreingetragen werden. 
+Das Formular kann von unseren Sekret‰rinnen nachbearbeitet werden. Der Send-Button schickt die Daten dann in die Anmelde-Datenbank (eintragen.php)
+Prinzipiell kann das Formular auch f¸r die analoge Sch¸leraufnahme verwendet werden. Formatiert wird das ¸ber standard.css-->
 
 <!DOCTYPE html>
 <html>
@@ -15,54 +15,49 @@ Prinzipiell kann das Formular auch f√ºr die analoge Sch√ºleraufnahme verwendet w
 	
 Folgende Daten wurden &uuml;bermittelt:<p>
 
-<!--  Daten, die mit IF-Abfragen an dieser Stelle behandelt werden, werden mit GET aus der URL ausgelesen und in ein lokales Array gespeichert. 
-Der Rest wird direkt mit Get geholt und ins Formular eingetragen -->
+<!--  Daten, die mit IF-Abfragen an dieser Stelle behandelt werden, werden mit GET aus der URL ausgelesen und in lokale Variablen gespeichert Der Rest wir direkt mit Get geholt -->
 
 Eintrags-ID: <?php echo $_GET['id']; 
-$array = [
-		"erz1strasse" => $_GET["erz1strasse"],
-		"erz1hausnummer" => $_GET["erz1hausnummer"],
-		"erz1ort" => $_GET["erz1ort"],
-		"erz1teilort" => $_GET["erz1teilort"],
-		"erz1plz" => $_GET["erz1plz"],
-		"erz2name" => $_GET["erz2name"],
-		"erz2strasse" => $_GET["erz2strasse"],
-		"erz2hausnummer" => $_GET["erz2hausnummer"],
-		"erz2ort" => $_GET["erz2ort"],
-		"erz2teilort" => $_GET["erz2teilort"],
-		"erz2plz" => $_GET["erz2plz"],
-		"erz1telefon1" => $_GET["erz1telefon1"],
-		"erz2telefon1" => $_GET["erz2telefon1"],
-	];
+// $name = $_GET["name"];
+$erz1strasse = $_GET["erz1strasse"];
+$erz1hausnummer = $_GET["erz1hausnummer"];
+$erz1ort = $_GET["erz1ort"];
+$erz1teilort = $_GET["erz1teilort"];
+$erz1plz = $_GET["erz1plz"];
+$erz2name = $_GET["erz2name"];
+$erz2strasse = $_GET["erz2strasse"];
+$erz2hausnummer = $_GET["erz2hausnummer"];
+$erz2ort = $_GET["erz2ort"];
+$erz2teilort = $_GET["erz2teilort"];
+$erz2plz = $_GET["erz2plz"];
+$erz1telefon1 = $_GET["erz1telefon1"];
+$erz2telefon1 = $_GET["erz2telefon1"];
 
 
-/* Wenn die Adressdaten des Erziehers 1 leer bleiben, werden die Adressdaten des Sch√ºlers dorthin √ºbernommen */
 
-if(empty($array[erz1strasse])){ 
-	$array = [
-		"erz1strasse" => $_GET["strasse"],
-		"erz1hausnummer" => $_GET["hausnummer"],
-		"erz1ort" => $_GET["ort"],
-		"erz1plz" => $_GET["plz"],
-		"erz1teilort" => $_GET["teilort"],
-		];
+/* Wenn die Adressdaten des Erziehers 1 leer bleiben, werden die Adressdaten des Sch¸lers dorthin ¸bernommen */
+
+if(empty($erz1strasse)){ 
+	$erz1strasse = $_GET["strasse"];
+	$erz1hausnummer = $_GET["hausnummer"];
+	$erz1ort = $_GET["ort"];
+	$erz1plz = $_GET["plz"];
+	$erz1teilort = $_GET["teilort"];
 }
 
-/* Wenn die Name des Erziehers 2 gegeben ist aber die Stra√üe des Erziehers 2 leer bleibt, werden die Adressdaten des Erziehers 1 dorthin √ºbernommen 
- * Falls dann sp√§ter der Erzieher 2 zum ELternsprecher gew√§hlt werden sollte o.√§., sind dann auch hier die Adressdaten vorhanden
+/* Wenn die Name des Erziehers 2 gegeben ist aber die Straﬂe des Erziehers 2 leer bleibt, werden die Adressdaten des Erziehers 1 dorthin ¸bernommen 
+ * Falls dann sp‰ter der Erzieher 2 zum ELternsprecher gew‰hlt werden sollte o.‰., sind dann auch hier die Adressdaten vorhanden
  * */
 
-if(!empty($array[erz2name]) && empty($array[erz2strasse])){
-	
-	$array = [
-		"erz2strasse" => $erz1strasse,
-		"erz2hausnummer" => $erz1hausnummer,
-		"erz2ort" => $erz1ort,
-		"erz2teilort" => $erz1teilort,
-		"erz2plz" => $erz1plz,
-		"erz2telefon1"  => $erz1telefon1,
-			];
+if(!empty($erz2name) && empty($erz2strasse)){
+	$erz2strasse = $erz1strasse;
+	$erz2hausnummer = $erz1hausnummer;
+	$erz2ort = $erz1ort;
+	$erz2teilort = $erz1teilort;
+	$erz2plz = $erz1plz;
+	$erz2telefon1  = $erz1telefon1;
 }
+
 
 
 ?>
@@ -125,7 +120,7 @@ if(!empty($array[erz2name]) && empty($array[erz2strasse])){
 	<label for="schule">ID der abgebenden Schule </label> 
     <input type="text" name="abgebendeschule" value="<?php echo $_GET['abgebendeSchule']; ?>" maxlength="60">
     
-     <label for="sonstigeschule">sonstige Schule</label> 
+    <label for="sonstigeschule">sonstige Schule</label> 
     <input type="text" name="sonstigeSchule" value="<?php echo $_GET['sonstigeSchule']; ?>" maxlength="60">
     
            
@@ -167,20 +162,20 @@ if(!empty($array[erz2name]) && empty($array[erz2strasse])){
     <input type="text" name="erz1geschlecht" value="<?php echo $_GET['erz1geschlecht']; ?>" maxlength="5"><br>
     
     <label for="erz1strasse">Stra&szlig;e</label> 
-    <input type="text" name="erz1strasse" value="<?php echo $array[erz1strasse]; ?>" maxlength="30"><br>
+    <input type="text" name="erz1strasse" value="<?php echo $erz1strasse; ?>" maxlength="30"><br>
     
     <label for="erz1hausnummer">Hausnummer</label> 
-    <input type="text" name="erz1hausnummer" value="<?php echo $array[erz1hausnummer]; ?>" maxlength="30"><br>
+    <input type="text" name="erz1hausnummer" value="<?php echo $erz1hausnummer; ?>" maxlength="30"><br>
     
     
     <label for="erz1plz">Postleitzahl</label> 
-    <input type="text" name="erz1plz" value="<?php echo $array[erz1plz]; ?>" maxlength="30">
+    <input type="text" name="erz1plz" value="<?php echo $erz1plz; ?>" maxlength="30">
     
     <label for="erz1ort">Ort</label> 
-    <input type="text" name="erz1ort" value="<?php echo $array[erz1ort]; ?>" maxlength="30"><br>
+    <input type="text" name="erz1ort" value="<?php echo $erz1ort; ?>" maxlength="30"><br>
     
     <label for="erz1teilort">Teilort de(s/n)</label>  
-    <input type="text" name="erz1teilort" value="<?php echo $array[erz1teilort]; ?>" maxlength="30">
+    <input type="text" name="erz1teilort" value="<?php echo $erz1teilort; ?>" maxlength="30">
     
     <label for="erz1telefon1">Telefon (privat)</label> 
     <input type="text" name="erz1telefon1" value="<?php echo $_GET['erz1telefon1']; ?>" maxlength="30"><br>
@@ -213,22 +208,22 @@ if(!empty($array[erz2name]) && empty($array[erz2strasse])){
     <input type="text" name="erz2geschlecht" value="<?php echo $_GET['erz2geschlecht']; ?>" maxlength="5"><br>
     
      <label for="erz2strasse">Stra&szlig;e</label> 
-    <input type="text" name="erz2strasse" value="<?php echo $array[erz2strasse]; ?>" maxlength="30"><br>
+    <input type="text" name="erz2strasse" value="<?php echo $erz2strasse; ?>" maxlength="30"><br>
     
     <label for="erz1hausnummer">Hausnummer</label> 
-    <input type="text" name="erz2hausnummer" value="<?php echo $array[erz2hausnummer]; ?>" maxlength="30"><br>
+    <input type="text" name="erz2hausnummer" value="<?php echo $erz2hausnummer; ?>" maxlength="30"><br>
         
     <label for="erz2plz">Postleitzahl</label> 
-    <input type="text" name="erz2plz" value="<?php echo $array[erz2plz]; ?>" maxlength="30">
+    <input type="text" name="erz2plz" value="<?php echo $erz2plz; ?>" maxlength="30">
     
     <label for="erz2ort">Ort</label> 
-    <input type="text" name="erz2ort" value="<?php echo $array[erz2ort]; ?>" maxlength="30"><br>
+    <input type="text" name="erz2ort" value="<?php echo $erz2ort; ?>" maxlength="30"><br>
     
     <label for="erz2teilort">Teilort</label>  
-    <input type="text" name="erz2teilort" value="<?php echo $array[erz2teilort]; ?>" maxlength="30">
+    <input type="text" name="erz2teilort" value="<?php echo $erz2teilort; ?>" maxlength="30">
     
     <label for="erz2telefon1">Telefon (privat)</label> 
-    <input type="text" name="erz2telefon1" value="<?php echo $array[erz2telefon1]; ?>" maxlength="30"><br>
+    <input type="text" name="erz2telefon1" value="<?php echo $erz2telefon1; ?>" maxlength="30"><br>
     
     <label for="erz2telefon2">Telefon (Arbeit)</label> 
     <input type="text" name="erz2telefon2" value="<?php echo $_GET['erz2telefon2']; ?>" maxlength="30"><br>
@@ -265,4 +260,3 @@ if(!empty($array[erz2name]) && empty($array[erz2strasse])){
 </form>
 </body>
 </html>
-
