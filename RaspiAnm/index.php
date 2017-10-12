@@ -15,7 +15,8 @@ Prinzipiell kann das Formular auch für die analoge Schüleraufnahme verwendet w
 	
 Folgende Daten wurden &uuml;bermittelt:<p>
 
-<!--  Daten, die mit IF-Abfragen an dieser Stelle behandelt werden, werden mit GET aus der URL ausgelesen und in lokale Variablen gespeichert Der Rest wir direkt mit Get geholt -->
+<!--  Daten, die mit IF-Abfragen an dieser Stelle behandelt werden, werden mit GET aus der URL ausgelesen und in ein lokales Array gespeichert. 
+Der Rest wird direkt mit Get geholt und ins Formular eingetragen -->
 
 Eintrags-ID: <?php echo $_GET['id']; 
 $array = [
