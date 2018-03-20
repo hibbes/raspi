@@ -59,6 +59,8 @@ $array = [
 		"geschwister" => $_POST["geschwister"],
 		"mit" => $_POST["mit"],
 		"ohne" => $_POST["ohne"],
+		"reinw" => $_POST["foto"],
+		"schwimmen" => $_POST["schwimmen"],
 ];
 
 // Der Datensatz wird auf UTF-8-Codierung geprüft und u.U. konvertiert
@@ -134,7 +136,9 @@ if(mysqli_num_rows($ergebnis)==0){
 	Klassenpartner,
 	nichtKlassenpartner,
 	erz2sorgerecht,
-	erz2auskunftsrecht)
+	erz2auskunftsrecht,
+	reinw,
+	schwimmen)
 	VALUES
 	('$array[eintrags_id]',
 	'5',
@@ -187,7 +191,10 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$array[mit]',
 	'$array[ohne]',
 	'$array[erz2sorgerecht]',
-	'$array[erz2auskunftsrecht]')";
+	'$array[erz2auskunftsrecht]',
+	'$array[reinw]',
+	'$array[schwimmen]'
+)";
 	
 	$eintragen = mysqli_query($db, $eintrag);
 	echo "<br> Datenbankeintrag erfolgreich!";
