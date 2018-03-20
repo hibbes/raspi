@@ -1,6 +1,6 @@
-<!-- In diesem Script wird ein HTML-Formular erzeugt, in das die in der URL Ã¼bergebenen Daten voreingetragen werden. 
-Das Formular kann von unseren SekretÃ¤rinnen nachbearbeitet werden. Der Send-Button schickt die Daten dann in die Anmelde-Datenbank (eintragen.php)
-Prinzipiell kann das Formular auch fÃ¼r die analoge SchÃ¼leraufnahme verwendet werden. Formatiert wird das Ã¼ber standard.css-->
+<!-- In diesem Script wird ein HTML-Formular erzeugt, in das die in der URL übergebenen Daten voreingetragen werden. 
+Das Formular kann von unseren Sekretärinnen nachbearbeitet werden. Der Send-Button schickt die Daten dann in die Anmelde-Datenbank (eintragen.php)
+Prinzipiell kann das Formular auch für die analoge Schüleraufnahme verwendet werden. Formatiert wird das über standard.css-->
 
 <!DOCTYPE html>
 <html>
@@ -35,7 +35,7 @@ $erz2telefon1 = $_GET["erz2telefon1"];
 
 
 
-/* Wenn die Adressdaten des Erziehers 1 leer bleiben, werden die Adressdaten des SchÃ¼lers dorthin Ã¼bernommen */
+/* Wenn die Adressdaten des Erziehers 1 leer bleiben, werden die Adressdaten des Schülers dorthin übernommen */
 
 if(empty($erz1strasse)){ 
 	$erz1strasse = $_GET["strasse"];
@@ -45,8 +45,8 @@ if(empty($erz1strasse)){
 	$erz1teilort = $_GET["teilort"];
 }
 
-/* Wenn die Name des Erziehers 2 gegeben ist aber die StraÃŸe des Erziehers 2 leer bleibt, werden die Adressdaten des Erziehers 1 dorthin Ã¼bernommen 
- * Falls dann spÃ¤ter der Erzieher 2 zum ELternsprecher gewÃ¤hlt werden sollte o.Ã¤., sind dann auch hier die Adressdaten vorhanden
+/* Wenn die Name des Erziehers 2 gegeben ist aber die Straße des Erziehers 2 leer bleibt, werden die Adressdaten des Erziehers 1 dorthin übernommen 
+ * Falls dann später der Erzieher 2 zum ELternsprecher gewählt werden sollte o.ä., sind dann auch hier die Adressdaten vorhanden
  * */
 
 if(!empty($erz2name) && empty($erz2strasse)){
@@ -260,4 +260,3 @@ if(!empty($erz2name) && empty($erz2strasse)){
 </form>
 </body>
 </html>
-
