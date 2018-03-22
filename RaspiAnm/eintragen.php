@@ -59,7 +59,7 @@ $array = [
 		"geschwister" => $_POST["geschwister"],
 		"mit" => $_POST["mit"],
 		"ohne" => $_POST["ohne"],
-		"reinw" => $_POST["foto"],
+		"reinw" => $_POST["reinw"],
 		"schwimmen" => $_POST["schwimmen"],
 ];
 
