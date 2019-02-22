@@ -32,6 +32,7 @@ $erz2teilort = $_GET["erz2teilort"];
 $erz2plz = $_GET["erz2plz"];
 $erz1telefon1 = $_GET["erz1telefon1"];
 $erz2telefon1 = $_GET["erz2telefon1"];
+$rufname = $_GET["rufname"];
 
 
 
@@ -58,7 +59,9 @@ if(!empty($erz2name) && empty($erz2strasse)){
 	$erz2telefon1  = $erz1telefon1;
 }
 
-
+if(!empty($rufname)){
+	$rufname = $_GET["vorname"];
+}
 
 ?>
 <!-- Das Formular wird generiert -->
@@ -144,8 +147,8 @@ if(!empty($erz2name) && empty($erz2strasse)){
     <label for="mit">M&ouml;chte in eine Klasse mit</label> 
     <input type="text" name="mit" value="<?php echo $_GET['inKlassemit']; ?>" maxlength="90"><br>
     
-    <label for="ohne">M&ouml;chte  <b>&nbsp; nicht &nbsp;</b>  in eine Klasse mit</label> 
-    <input type="text" name="ohne" value="<?php echo $_GET['nichtinKlassemit']; ?>" maxlength="90"><br>
+    <label for="ohne">Bisherige Klasse, Klassenlehrerin</label> 
+    <input type="text" name="klasse" value="<?php echo $_GET['Klasse']; ?>" maxlength="90"><br>
     </div>
     
     <div id="eltern">
