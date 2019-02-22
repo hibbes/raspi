@@ -126,7 +126,9 @@ if(!empty($rufname)){
     <label for="sonstigeschule">sonstige Schule</label> 
     <input type="text" name="sonstigeSchule" value="<?php echo $_GET['sonstigeSchule']; ?>" maxlength="60">
     
-           
+    <label for="ohne">Bisherige Klasse, Klassenlehrerin</label> 
+    <input type="text" name="klasse" value="<?php echo $_GET['Klasse']; ?>" maxlength="90"><br>
+               
     <label for="geschwister">Geschwister in Schiller-Klasse</label> 
     <input type="text" name="geschwister" value="<?php echo $_GET['geschwister']; ?>" maxlength="100"><br>
     </div>
@@ -146,9 +148,7 @@ if(!empty($rufname)){
     
     <label for="mit">M&ouml;chte in eine Klasse mit</label> 
     <input type="text" name="mit" value="<?php echo $_GET['inKlassemit']; ?>" maxlength="90"><br>
-    
-    <label for="ohne">Bisherige Klasse, Klassenlehrerin</label> 
-    <input type="text" name="klasse" value="<?php echo $_GET['Klasse']; ?>" maxlength="90"><br>
+      
     </div>
     
     <div id="eltern">
