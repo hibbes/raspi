@@ -102,12 +102,14 @@ if(!empty($rufname)){
     <label for="geschlecht">Geschlecht</label> 
     <input type="text" name="geschlecht" value="<?php echo $_GET['geschlecht']; ?>" maxlength="30"><br>
     
+    <span style="color:red">
     <label for="bekenntnis">Bekenntnis</label> 
     <input type="text" name="bekenntnis" value="<?php echo $_GET['bekenntnis']; ?>" maxlength="30"><br>
-    
+    </span>
+    <span style="color:red">
     <label for="reinw">Einwilligung zur Namens&uuml;bermittlung an Religionsgemeinschaft</label> 
     <input type="text" name="reinw" value="<?php echo $_GET['reinw']; ?>" maxlength="30"><br>
-    
+    </span>
 	<label for="geburtsdatum">Geburtsdatum</label> 
     <input type="text" name="geburtsdatum" value="<?php echo $_GET['geburtsdatum']; ?>" maxlength="10">
 	    
