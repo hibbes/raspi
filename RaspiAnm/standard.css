@@ -62,6 +62,9 @@ label { /* Beschriftung auf eigener Zeile */
   margin-top:10px;
 }
 
+.wichtig {/* Wichtige Passagen in gelb */
+	background-color: yellow;
+}
 
 h1.titel {
 	text-align: center;
