@@ -1,6 +1,6 @@
-<!-- In diesem Script wird ein HTML-Formular erzeugt, in das die in der URL �bergebenen Daten voreingetragen werden. 
-Das Formular kann von unseren Sekret�rinnen nachbearbeitet werden. Der Send-Button schickt die Daten dann in die Anmelde-Datenbank (eintragen.php)
-Prinzipiell kann das Formular auch f�r die analoge Sch�leraufnahme verwendet werden. Formatiert wird das �ber standard.css-->
+<!-- In diesem Script wird ein HTML-Formular erzeugt, in das die in der URL übergebenen Daten voreingetragen werden. 
+Das Formular kann von unseren Sekretärinnen nachbearbeitet werden. Der Send-Button schickt die Daten dann in die Anmelde-Datenbank (eintragen.php)
+Prinzipiell kann das Formular auch für die analoge Schüleraufnahme verwendet werden. Formatiert wird das über standard.css-->
 
 <!DOCTYPE html>
 <html>
