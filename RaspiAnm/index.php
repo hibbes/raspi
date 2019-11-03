@@ -1,6 +1,6 @@
-<!-- In diesem Script wird ein HTML-Formular erzeugt, in das die in der URL übergebenen Daten voreingetragen werden. 
-Das Formular kann von unseren Sekretärinnen nachbearbeitet werden. Der Send-Button schickt die Daten dann in die Anmelde-Datenbank (eintragen.php)
-Prinzipiell kann das Formular auch für die analoge Schüleraufnahme verwendet werden. Formatiert wird das über standard.css-->
+<!-- In diesem Script wird ein HTML-Formular erzeugt, in das die in der URL ï¿½bergebenen Daten voreingetragen werden. 
+Das Formular kann von unseren Sekretï¿½rinnen nachbearbeitet werden. Der Send-Button schickt die Daten dann in die Anmelde-Datenbank (eintragen.php)
+Prinzipiell kann das Formular auch fï¿½r die analoge Schï¿½leraufnahme verwendet werden. Formatiert wird das ï¿½ber standard.css-->
 
 <!DOCTYPE html>
 <html>
@@ -36,7 +36,7 @@ $rufname = $_GET["rufname"];
 
 
 
-/* Wenn die Adressdaten des Erziehers 1 leer bleiben, werden die Adressdaten des Schülers dorthin übernommen */
+/* Wenn die Adressdaten des Erziehers 1 leer bleiben, werden die Adressdaten des Schï¿½lers dorthin ï¿½bernommen */
 
 if(empty($erz1strasse)){ 
 	$erz1strasse = $_GET["strasse"];
@@ -46,8 +46,8 @@ if(empty($erz1strasse)){
 	$erz1teilort = $_GET["teilort"];
 }
 
-/* Wenn die Name des Erziehers 2 gegeben ist aber die Straße des Erziehers 2 leer bleibt, werden die Adressdaten des Erziehers 1 dorthin übernommen 
- * Falls dann später der Erzieher 2 zum ELternsprecher gewählt werden sollte o.ä., sind dann auch hier die Adressdaten vorhanden
+/* Wenn die Name des Erziehers 2 gegeben ist aber die Straï¿½e des Erziehers 2 leer bleibt, werden die Adressdaten des Erziehers 1 dorthin ï¿½bernommen 
+ * Falls dann spï¿½ter der Erzieher 2 zum ELternsprecher gewï¿½hlt werden sollte o.ï¿½., sind dann auch hier die Adressdaten vorhanden
  * */
 
 if(!empty($erz2name) && empty($erz2strasse)){
@@ -242,7 +242,7 @@ if(!empty($rufname)){
     
     </div>
     
-   <!-- Hier folgen neben der Fotoeinwilligung noch die ID, die unser Wordpress für jedes ausgehende Formular generiert und das Datum des Eintrags -->
+   <!-- Hier folgen neben der Fotoeinwilligung noch die ID, die unser Wordpress fï¿½r jedes ausgehende Formular generiert und das Datum des Eintrags -->
         
     <div id="allgemein">
     <h3>Allgemeines</h3>
