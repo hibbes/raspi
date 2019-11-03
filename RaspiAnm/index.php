@@ -36,7 +36,7 @@ $rufname = $_GET["rufname"];
 
 
 
-/* Wenn die Adressdaten des Erziehers 1 leer bleiben, werden die Adressdaten des Sch�lers dorthin �bernommen */
+/* Wenn die Adressdaten des Erziehers 1 leer bleiben, werden die Adressdaten des Schülers dorthin übernommen */
 
 if(empty($erz1strasse)){ 
 	$erz1strasse = $_GET["strasse"];
@@ -46,8 +46,8 @@ if(empty($erz1strasse)){
 	$erz1teilort = $_GET["teilort"];
 }
 
-/* Wenn die Name des Erziehers 2 gegeben ist aber die Stra�e des Erziehers 2 leer bleibt, werden die Adressdaten des Erziehers 1 dorthin �bernommen 
- * Falls dann sp�ter der Erzieher 2 zum ELternsprecher gew�hlt werden sollte o.�., sind dann auch hier die Adressdaten vorhanden
+/* Wenn die Name des Erziehers 2 gegeben ist aber die Straße des Erziehers 2 leer bleibt, werden die Adressdaten des Erziehers 1 dorthin übernommen 
+ * Falls dann später der Erzieher 2 zum ELternsprecher gewählt werden sollte o.ä., sind dann auch hier die Adressdaten vorhanden
  * */
 
 if(!empty($erz2name) && empty($erz2strasse)){
