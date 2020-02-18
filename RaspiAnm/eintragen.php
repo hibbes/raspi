@@ -61,6 +61,7 @@ $array = [
 		"klasse" => $_POST["klasse"],
 		"reinw" => $_POST["reinw"],
 		"schwimmen" => $_POST["schwimmen"],
+		"impfung" => $_POST["impfung"]
 ];
 
 // Der Datensatz wird auf UTF-8-Codierung geprüft und u.U. konvertiert
@@ -138,7 +139,8 @@ if(mysqli_num_rows($ergebnis)==0){
 	erz2sorgerecht,
 	erz2auskunftsrecht,
 	reinw,
-	schwimmen)
+	schwimmen,
+	impfung)
 	VALUES
 	('$array[eintrags_id]',
 	'5',
@@ -193,7 +195,8 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$array[erz2sorgerecht]',
 	'$array[erz2auskunftsrecht]',
 	'$array[reinw]',
-	'$array[schwimmen]'
+	'$array[schwimmen]',
+    '$array[impfung]'
 )";
 	
 	$eintragen = mysqli_query($db, $eintrag);
