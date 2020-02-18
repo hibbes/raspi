@@ -104,11 +104,23 @@ if(!empty($rufname)){
     
     <span style="color:red">
     <label for="bekenntnis">Bekenntnis</label> 
-    <input type="text" name="bekenntnis" value="<?php echo $_GET['bekenntnis']; ?>" maxlength="30"><br>
-    </span>
-    <span style="color:red">
+    <input type="radio" name="bekenntnis" value="rk" maxlength="10">r&ouml;misch-katholisch<br>
+    <input type="radio" name="bekenntnis" value="ev" maxlength="10">evangelisch<br>
+    <input type="radio" name="bekenntnis" value="ak" maxlength="10">alt-katholisch<br>
+    <input type="radio" name="bekenntnis" value="syr" maxlength="10">syrisch-orthodox<br>
+    <input type="radio" name="bekenntnis" value="otx" maxlength="10">orthodox (au&szlig;er syrisch-orthodox)<br>
+    <input type="radio" name="bekenntnis" value="jüd" maxlength="10">j&uuml;disch<br>
+    <input type="radio" name="bekenntnis" value="ale" maxlength="10">alevitisch<br>
+    <input type="radio" name="bekenntnis" value="isl" maxlength="10">islamisch-sunnitisch<br>
+    <input type="radio" name="bekenntnis" value="son-kein" maxlength="10">sonstige oder keine Religionszugeh&ouml;rigkeit<br>
+    <input type="radio" name="bekenntnis" value="K_A" maxlength="10" checked ="checked">keine Angabe<br>
     <label for="reinw">Einwilligung zur Namens&uuml;bermittlung an Religionsgemeinschaft</label> 
-    <input type="text" name="reinw" value="<?php echo $_GET['reinw']; ?>" maxlength="30"><br>
+    <input type="radio" name="reinw" id="ja" value="Ja">Ja
+    <input type="radio" name="reinw" id="nein" value="Nein" label="Nein" checked="checked">Nein<br>
+    
+    <label for="Impfschutz">Impfschutz lag vor?</label> 
+    <input type="radio" name="impfung" id="ja" value="Ja">Ja
+    <input type="radio" name="impfung" id="nein" value="Nein" label="Nein" checked="checked">Nein
     </span>
 	<label for="geburtsdatum">Geburtsdatum</label> 
     <input type="text" name="geburtsdatum" value="<?php echo $_GET['geburtsdatum']; ?>" maxlength="10">
@@ -207,8 +219,7 @@ if(!empty($rufname)){
     
     <label for="erz2name">Nachname</label> 
     <input type="text" name="erz2name" value="<?php echo $_GET['erz2name']; ?>" maxlength="30"><br>
-    
-        
+            
     <label for="erz2geschlecht">Geschlecht</label> 
     <input type="text" name="erz2geschlecht" value="<?php echo $_GET['erz2geschlecht']; ?>" maxlength="5"><br>
     
@@ -252,6 +263,9 @@ if(!empty($rufname)){
     
     <label for="schwimmen">Schwimmf&auml;higkeit (15min ohne Schwimmhilfe)</label> 
     <input type="text" name="schwimmen" value="<?php echo $_GET['schwimmen']; ?>" maxlength="30"><br>
+    
+     
+    <br>
     
     <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" maxlength="30"><br>
     
