@@ -1,79 +1,79 @@
 <?php
 include("dbconnect.php");
 
-/* Die Variablen werden (diesmal via POST) übernommen und lokal gespeichert. */
+/* Die Variablen werden (diesmal via POST) Ã¼bernommen und lokal gespeichert. */
 
 $array = [
-		"eintrags_id" => $_POST["id"],
-		"name" => $_POST["name"],
-		"vorname" => $_POST["vorname"],
-		"rufname" => $_POST["rufname"],
-		"geschlecht" => $_POST["geschlecht"],
-		"geburtstag" => $_POST["geburtsdatum"],
-		"geburtsort" => $_POST["geburtsort"],
-		"geburtsland" => $_POST["geburtsland"],
-		"land" => $_POST["staat1"],
-		"land2" => $_POST["staat2"],
-		"muttersprache" => $_POST["muttersprache"],
-		"bekenntnis" => $_POST["bekenntnis"],
-		"abgebendeschule" => $_POST["abgebendeschule"],
-		"sprachwahl" => $_POST["fremdsprache"],
-		"profil1" => $_POST["profil1"],
-		"ru" => $_POST["reli"],
-		"zug" => $_POST["zug"],
-		"strasse" => $_POST["strasse"],
-		"hausnummer" => $_POST["hausnummer"],
-		"ort" => $_POST["ort"],
-		"teilort" => $_POST["teilort"],
-		"plz" => $_POST["plz"],
-		"erz1vorname" => $_POST["erz1vorname"],
-		"erz1name" => $_POST["erz1name"],
-		"erz1geschlecht" => $_POST["erz1geschlecht"],
-		"erz1strasse" => $_POST["erz1strasse"],
-		"erz1hausnummer" => $_POST["erz1hausnummer"],
-		"erz1ort" => $_POST["erz1ort"],
-		"erz1teilort" => $_POST["erz1teilort"],
-		"erz1plz" => $_POST["erz1plz"],
-		"erz1telefon1" => $_POST["erz1telefon1"],
-		"erz1telefon2" => $_POST["erz1telefon2"],
-		"erz1email" => $_POST["erz1email"],
-		"erz1handy" => $_POST["erz1handy"],
-		"erz2sorgerecht" => $_POST["erz2sorgerecht"],
-		"erz2auskunftsrecht" => $_POST["erz2auskunftsrecht"],
-		"erz2vorname" => $_POST["Erz2Vorname"],
-		"erz2name" => $_POST["Erz2Name"],
-		"erz2geschlecht" => $_POST["erz2geschlecht"],
-		"erz2vorname" => $_POST["erz2vorname"],
-		"erz2name" => $_POST["erz2name"],
-		"erz2strasse" => $_POST["erz2strasse"],
-		"erz2hausnummer" => $_POST["erz2hausnummer"],
-		"erz2ort" => $_POST["erz2ort"],
-		"erz2teilort" => $_POST["erz2teilort"],
-		"erz2plz" => $_POST["erz2plz"],
-		"erz2telefon1" => $_POST["erz2telefon1"],
-		"erz2telefon2" => $_POST["erz2telefon2"],
-		"erz2email" => $_POST["erz2email"],
-		"erz2handy" => $_POST["erz2handy"],
-		"foto" => $_POST["foto"],
-		"notfallnr" => $_POST["notfallnr"],
-		"geschwister" => $_POST["geschwister"],
-		"mit" => $_POST["mit"],
-		"klasse" => $_POST["klasse"],
-		"reinw" => $_POST["reinw"],
-		"schwimmen" => $_POST["schwimmen"],
-		"impfung" => $_POST["impfung"]
+    "eintrags_id" => $_POST["id"],
+    "name" => $_POST["name"],
+    "vorname" => $_POST["vorname"],
+    "rufname" => $_POST["rufname"],
+    "geschlecht" => $_POST["geschlecht"],
+    "geburtstag" => $_POST["geburtsdatum"],
+    "geburtsort" => $_POST["geburtsort"],
+    "geburtsland" => $_POST["geburtsland"],
+    "land" => $_POST["staat1"],
+    "land2" => $_POST["staat2"],
+    "muttersprache" => $_POST["muttersprache"],
+    "bekenntnis" => $_POST["bekenntnis"],
+    "abgebendeschule" => $_POST["abgebendeschule"],
+    "sprachwahl" => $_POST["fremdsprache"],
+    "profil1" => $_POST["profil1"],
+    "ru" => $_POST["reli"],
+    "zug" => $_POST["zug"],
+    "strasse" => $_POST["strasse"],
+    "hausnummer" => $_POST["hausnummer"],
+    "ort" => $_POST["ort"],
+    "teilort" => $_POST["teilort"],
+    "plz" => $_POST["plz"],
+    "erz1vorname" => $_POST["erz1vorname"],
+    "erz1name" => $_POST["erz1name"],
+    "erz1geschlecht" => $_POST["erz1geschlecht"],
+    "erz1strasse" => $_POST["erz1strasse"],
+    "erz1hausnummer" => $_POST["erz1hausnummer"],
+    "erz1ort" => $_POST["erz1ort"],
+    "erz1teilort" => $_POST["erz1teilort"],
+    "erz1plz" => $_POST["erz1plz"],
+    "erz1telefon1" => $_POST["erz1telefon1"],
+    "erz1telefon2" => $_POST["erz1telefon2"],
+    "erz1email" => $_POST["erz1email"],
+    "erz1handy" => $_POST["erz1handy"],
+    "erz2sorgerecht" => $_POST["erz2sorgerecht"],
+    "erz2auskunftsrecht" => $_POST["erz2auskunftsrecht"],
+    "erz2vorname" => $_POST["Erz2Vorname"],
+    "erz2name" => $_POST["Erz2Name"],
+    "erz2geschlecht" => $_POST["erz2geschlecht"],
+    "erz2vorname" => $_POST["erz2vorname"],
+    "erz2name" => $_POST["erz2name"],
+    "erz2strasse" => $_POST["erz2strasse"],
+    "erz2hausnummer" => $_POST["erz2hausnummer"],
+    "erz2ort" => $_POST["erz2ort"],
+    "erz2teilort" => $_POST["erz2teilort"],
+    "erz2plz" => $_POST["erz2plz"],
+    "erz2telefon1" => $_POST["erz2telefon1"],
+    "erz2telefon2" => $_POST["erz2telefon2"],
+    "erz2email" => $_POST["erz2email"],
+    "erz2handy" => $_POST["erz2handy"],
+    "foto" => $_POST["foto"],
+    "notfallnr" => $_POST["notfallnr"],
+    "geschwister" => $_POST["geschwister"],
+    "mit" => $_POST["mit"],
+    "klasse" => $_POST["klasse"],
+    "reinw" => $_POST["reinw"],
+    "schwimmen" => $_POST["schwimmen"],
+    "impfung" => $_POST["impfung"]
 ];
 
-// Der Datensatz wird auf UTF-8-Codierung geprüft und u.U. konvertiert
+// Der Datensatz wird auf UTF-8-Codierung geprÃ¼ft und u.U. konvertiert
 foreach ($array as &$string) {
+    
+    if(mb_detect_encoding($string) != 'UTF-8'){
+        $string = utf8_encode($string); }
+}
 
-	if(mb_detect_encoding($string) != 'UTF-8'){
-		$string = utf8_encode($string); }
-	}
 
 
-
-/* Hier wird geprüft, ob es bereits einen Datensatz mit der übergebenen Eintrags-ID gibt.
+/* Hier wird geprÃ¼ft, ob es bereits einen Datensatz mit der Ã¼bergebenen Eintrags-ID gibt.
  * Wenn ja, wird der Import mit dem Hinweis auf eine Doppeleintragung abgebrochen (siehe vorletzte Zeile) */
 
 $abfrage = "SELECT ID FROM Anmeldungen WHERE Eintrags_ID = '$array[eintrags_id]'";
@@ -81,11 +81,11 @@ $ergebnis = mysqli_query($db, $abfrage);
 
 echo "Formular-ID ist '$array[eintrags_id]'";
 
-/* Die nun genannten Werte repräsentieren unsere Anmelde-SQL-Tabelle. Einige ASV-Felder, die für uns nicht relevant sind, fragen wir nicht ab */
+/* Die nun genannten Werte reprÃ¤sentieren unsere Anmelde-SQL-Tabelle. Einige ASV-Felder, die fÃ¼r uns nicht relevant sind, fragen wir nicht ab */
 
 
 if(mysqli_num_rows($ergebnis)==0){
-	$eintrag = "INSERT INTO Anmeldungen (
+    $eintrag = "INSERT INTO Anmeldungen (
 	Eintrags_ID,
 	Klasse,
 	Name,
@@ -198,11 +198,11 @@ if(mysqli_num_rows($ergebnis)==0){
 	'$array[schwimmen]',
     '$array[impfung]'
 )";
-	
-	$eintragen = mysqli_query($db, $eintrag);
-	echo "<br> Datenbankeintrag erfolgreich!";
-	echo $eintrag."\n";
-	
+    
+    $eintragen = mysqli_query($db, $eintrag);
+    echo "<br> Datenbankeintrag erfolgreich!";
+    echo $eintrag."\n";
+    
 } else {exit("<br><br>Anmeldung bereits aufgenommen!");}
 
 ?>
